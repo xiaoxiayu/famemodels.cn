@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/public/css/blueimp-gallery.min.css">
+    <link rel='stylesheet' href="/public/css/bootstrap.min.css" type='text/css'/>
+    <!-- CCS for the effects-->
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="/public/css/font-awesome.min.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/public/fonts/stylesheet.css">
+    <link rel="stylesheet" href="/public/css/social-buttons.css">
+
+    <script src="/public/js/jquery-1.9.1.min.js"></script>
+
+    <title>GTEST</title>
+</head>
+<style>
+    .hovereffect {
+        width: 100%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default;
+        box-shadow: 2px 2px 2px 2px grey;
+        margin-bottom: 10px;
+    }
+
+    .hovereffect .overlay {
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        top: auto;
+        bottom: 0;
+        padding: 1em;
+        height: 4.75em;
+        background: #a2a2a2;
+        color: #3c0000;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        opacity: 0.95;
+    }
+
+    .hovereffect img {
+        display: block;
+        position: relative;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+    }
+
+    .hovereffect:hover img {
+        -webkit-transform: translate3d(0, -10%, 0);
+        transform: translate3d(0, -10%, 0);
+    }
+
+    .hovereffect h2 {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        font-size: 17px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.6);
+        float: left;
+        margin: 0px;
+        display: inline-block;
+    }
+
+    .hovereffect a.info {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 14px;
+        text-transform: uppercase;
+        color: #fff;
+        border: 1px solid #fff;
+        margin: 50px 0 0 0;
+        background-color: transparent;
+    }
+
+    .hovereffect a.info:hover {
+        box-shadow: 0 0 5px #fff;
+    }
+
+    .hovereffect p.icon-links a {
+        float: right;
+        color: #3c4a50;
+        font-size: 1.4em;
+    }
+
+    .hovereffect:hover p.icon-links a:hover,
+    .hovereffect:hover p.icon-links a:focus {
+        color: #252d31;
+    }
+
+    .hovereffect h2,
+    .hovereffect p.icon-links a {
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0, 200%, 0);
+        transform: translate3d(0, 200%, 0);
+    }
+
+    .hovereffect p.icon-links a span:before {
+        display: inline-block;
+        padding: 8px 10px;
+        speak: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .hovereffect:hover .overlay,
+    .hovereffect:hover h2,
+    .hovereffect:hover p.icon-links a {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .hovereffect:hover h2 {
+        -webkit-transition-delay: 0.05s;
+        transition-delay: 0.05s;
+    }
+
+    .hovereffect:hover p.icon-links a:nth-child(3) {
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+    }
+
+    .hovereffect:hover p.icon-links a:nth-child(2) {
+        -webkit-transition-delay: 0.15s;
+        transition-delay: 0.15s;
+    }
+
+    .hovereffect:hover p.icon-links a:first-child {
+        -webkit-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+    }
+
+    .navbar-nav li {
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+</style>
+<body>
+
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">Fame</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav" style="float:right">
+            <li class="active">
+                <i data-toggle="tooltip" title="Share to Facebook">
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.famemodels.cn&t=Misha" target="_blank" class="btn btn-facebook"><span class="fa fa-facebook"></a>
+                </i>
+            </li>
+            <li>
+                <i data-toggle="tooltip" title="Share to Twitter">
+                    <a href="http://twitter.com/share?url=http%3A%2F%2Fwww.famemodels.cn&text=Shared+with+GmediaGallery" target="_blank" class="btn btn-twitter"><span class="fa fa-twitter"></a>
+                </i>
+            </li>
+            <li>
+                <i data-toggle="tooltip" title="Share to Google+">
+                    <a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.famemodels.cn" target="_blank" class="btn btn-google-plus"><span class="fa fa-google-plus"></a>
+                </i>
+            </li>
+            <li>
+                <i data-toggle="tooltip" title="Share to Pinterest">
+                    <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.famemodels.cn&description=Shared+with+GmediaGallery&media=http%3A%2F%2Fwww.famemodels.cn%2Fwp-content%2Fgrand-media%2Fimage%2Fpared3_ret.jpghttp://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.famemodels.cn&description=Shared+with+GmediaGallery&media=http%3A%2F%2Fwww.famemodels.cn%2Fwp-content%2Fgrand-media%2Fimage%2Fpared3_ret.jpg" target="_blank" class="btn btn-pinterest"><span class="fa fa-pinterest"></a>
+                </i>
+            </li>
+            <li>
+                <i data-toggle="tooltip" title="Share to VK">
+                    <a href="http://vk.com/share.php?url=http%3A%2F%2Fwww.famemodels.cn" target="_blank" class="btn btn-vk"><span class="fa fa-vk"></a>
+                </i>
+            </li>
+            <li>
+                <i data-toggle="tooltip" title="Share via Email">
+                    <a href="mailto:?subject=Misha&body=http%3A%2F%2Fwww.famemodels.cn" target="_blank" class="btn btn-envelope"><span class="fa fa-envelope"></a>
+                </i>
+            </li>
+
+
+        </ul>
+    </div>
+</nav>
+
+
+<div id="links">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+            <a name="gallery-a" href="dist/wordpress/wp-content/uploads/2013/08/2.jpg" title="Apple">
+                <img class="img-responsive" src="dist/wordpress/wp-content/uploads/2013/08/2.jpg" alt="Apple">
+            </a>
+
+            <div class="overlay">
+                <h2>Effect 10</h2>
+
+                <p class="icon-links">
+                    <a href="#">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a href="#">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a href="#">
+                        <span class="fa fa-instagram"></span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+            <a name="gallery-a" href="dist/wordpress/wp-content/uploads/2013/08/2.jpg" title="Banana">
+                <img class="img-responsive" src="dist/wordpress/wp-content/uploads/2013/08/2.jpg" alt="Banana">
+            </a>
+
+            <div class="overlay">
+                <h2>Effect 10</h2>
+
+                <p class="icon-links">
+                    <a href="#">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a href="#">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a href="#">
+                        <span class="fa fa-instagram"></span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+            <a name="gallery-a" href="dist/wordpress/wp-content/uploads/2013/08/2.jpg" title="Orange">
+                <img class="img-responsive" src="dist/wordpress/wp-content/uploads/2013/08/2.jpg" alt="Orange">
+            </a>
+
+            <div class="overlay">
+                <h2>Effect 10</h2>
+
+                <p class="icon-links">
+                    <a href="#">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a href="#">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a href="#">
+                        <span class="fa fa-instagram"></span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+
+
+<script src="js/blueimp-gallery.min.js"></script>
+
+<script>
+//    $(function() {
+//
+//                $("#links").click(function(e){
+//                    alert('asdf');
+//                    event = event || window.event;
+//                    var target = event.target || event.srcElement,
+//                            link = target.src ? target.parentNode : target,
+//                            options = {index: link, event: event},
+//                            links = $("#a");
+//
+//                    blueimp.Gallery(links, options);
+//                });
+//    });
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = $("a[name^='gallery']");
+        blueimp.Gallery(links, options);
+    };
+</script>
+
+
+</body>
+</html>
