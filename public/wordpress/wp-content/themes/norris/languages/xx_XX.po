@@ -1,0 +1,2253 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Norris v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-10-20 06:24:27+0000\n"
+"Last-Translator: admin <withemes.com@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Your language here\n"
+"X-Poedit-Country: YOUR COUNTRY HERE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:7
+#@ wi
+msgid "Oops, This Page Could Not Be Found!"
+msgstr ""
+
+#: 404.php:9
+#@ wi
+msgid "404 - Not found"
+msgstr ""
+
+#: 404.php:13
+#@ wi
+msgid "Search our website"
+msgstr ""
+
+#: admin/classes/class.options_machine.php:547
+#@ wi
+msgid "No backups yet"
+msgstr ""
+
+#: admin/classes/class.options_machine.php:554
+#: admin/old/classes/class.options_machine.php:535
+#@ wi
+msgid "Last Backup : "
+msgstr ""
+
+#: admin/front-end/options.php:43
+#: admin/front-end/options.php:67
+#: admin/old/front-end/options.php:43
+#: admin/old/front-end/options.php:67
+#@ wi
+msgid "Save All Changes"
+msgstr ""
+
+#: admin/front-end/options.php:68
+#: admin/old/front-end/options.php:68
+#@ wi
+msgid "Options Reset"
+msgstr ""
+
+#: admin/functions/functions.options.php:20
+#: admin/functions/functions.options.php:25
+#: admin/functions/functions.options.php:27
+#: admin/functions/functions.options.php:118
+#: admin/functions/functions.options.php:120
+#@ wi
+msgid "General"
+msgstr ""
+
+#: admin/functions/functions.options.php:30
+#@ wi
+msgid "Enable responsive layout?"
+msgstr ""
+
+#: admin/functions/functions.options.php:34
+#@ wi
+msgid "If turned OFF, your site on mobile devices will look the same as on the desktop screen"
+msgstr ""
+
+#: admin/functions/functions.options.php:37
+#@ wi
+msgid "Enable Scroll to top button?"
+msgstr ""
+
+#: admin/functions/functions.options.php:41
+#@ wi
+msgid "Scroll top button is the small square button at the bottom right."
+msgstr ""
+
+#: admin/functions/functions.options.php:44
+#@ wi
+msgid "Enable theme colorbox?"
+msgstr ""
+
+#: admin/functions/functions.options.php:48
+#@ wi
+msgid "Norris has included Colorbox plugin. Turn it OFF if you don't want to use it or you want to use your own plugin."
+msgstr ""
+
+#: admin/functions/functions.options.php:51
+#@ wi
+msgid "Header Code"
+msgstr ""
+
+#: admin/functions/functions.options.php:55
+#@ wi
+msgid "You can load Google fonts here."
+msgstr ""
+
+#: admin/functions/functions.options.php:58
+#@ wi
+msgid "Footer Code"
+msgstr ""
+
+#: admin/functions/functions.options.php:62
+#@ wi
+msgid "You can Google Analytics tracking code or something here."
+msgstr ""
+
+#: admin/functions/functions.options.php:65
+#@ wi
+msgid "Custom CSS"
+msgstr ""
+
+#: admin/functions/functions.options.php:69
+#@ wi
+msgid "If you know a little about CSS, you can write your custom CSS here. Do not edit CSS files (will be lost when you update this theme)."
+msgstr ""
+
+#: admin/functions/functions.options.php:73
+#: admin/functions/functions.options.php:75
+#@ wi
+msgid "Icons"
+msgstr ""
+
+#: admin/functions/functions.options.php:78
+#@ wi
+msgid "Favicon"
+msgstr ""
+
+#: admin/functions/functions.options.php:81
+#@ wi
+msgid "Favicon is a small icon image at the topbar of your browser. Should be 16x16px or 32x32px image (png, ico...)"
+msgstr ""
+
+#: admin/functions/functions.options.php:84
+#@ wi
+msgid "Apple iPhone icon (57x57px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:87
+#@ wi
+msgid "Similar to the Favicon, the <strong>Apple iPhone icon</strong> is a file used for a web page icon on the Apple iPhone. When someone bookmarks your web page or adds your web page to their home screen this icon is used. If this file is not found these Apple products will use the screen shot of the web page, which often looks like no more than a white square."
+msgstr ""
+
+#: admin/functions/functions.options.php:90
+#@ wi
+msgid "Apple iPhone retina icon (114x114px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:93
+#@ wi
+msgid "The same as Apple iPhone icon but for Retina iPhone."
+msgstr ""
+
+#: admin/functions/functions.options.php:96
+#@ wi
+msgid "Apple iPad icon (72x72px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:99
+#@ wi
+msgid "The same as Apple iPhone icon but for iPad."
+msgstr ""
+
+#: admin/functions/functions.options.php:102
+#@ wi
+msgid "Apple iPad Retina icon (144x144px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:105
+#@ wi
+msgid "The same as Apple iPhone icon but for Retina iPad."
+msgstr ""
+
+#: admin/functions/functions.options.php:111
+#@ wi
+msgid "Top area"
+msgstr ""
+
+#: admin/functions/functions.options.php:123
+#@ wi
+msgid "Top area type"
+msgstr ""
+
+#: admin/functions/functions.options.php:128
+#@ wi
+msgid "Fullscreen background image"
+msgstr ""
+
+#: admin/functions/functions.options.php:129
+#@ wi
+msgid "Not fullscreen background image"
+msgstr ""
+
+#: admin/functions/functions.options.php:130
+#@ wi
+msgid "Fullscreen background slideshow"
+msgstr ""
+
+#: admin/functions/functions.options.php:131
+#@ wi
+msgid "Not fullscreen background slideshow"
+msgstr ""
+
+#: admin/functions/functions.options.php:132
+#@ wi
+msgid "Fullwidth Content"
+msgstr ""
+
+#: admin/functions/functions.options.php:133
+#@ wi
+msgid "Do not display top area."
+msgstr ""
+
+#: admin/functions/functions.options.php:135
+#@ wi
+msgid "Select a type and scroll to respective option area below."
+msgstr ""
+
+#: admin/functions/functions.options.php:138
+#@ wi
+msgid "Top area content"
+msgstr ""
+
+#: admin/functions/functions.options.php:142
+#@ wi
+msgid "You can use both shortcodes and HTML for this field."
+msgstr ""
+
+#: admin/functions/functions.options.php:145
+#@ wi
+msgid "Parallax Effect?"
+msgstr ""
+
+#: admin/functions/functions.options.php:149
+#@ wi
+msgid "Enable parallax effect for top area"
+msgstr ""
+
+#: admin/functions/functions.options.php:152
+#@ wi
+msgid "Overlay opacity"
+msgstr ""
+
+#: admin/functions/functions.options.php:159
+#@ wi
+msgid "The bigger number is, the darker background should be."
+msgstr ""
+
+#: admin/functions/functions.options.php:164
+#: admin/functions/functions.options.php:166
+#@ wi
+msgid "Background"
+msgstr ""
+
+#: admin/functions/functions.options.php:169
+#: inc/metabox.php:271
+#@ wi
+msgid "Background image"
+msgstr ""
+
+#: admin/functions/functions.options.php:173
+#@ wi
+msgid "Any size works well on Chrome/Firefox/Safari but at least 1366px in width to work on IE8."
+msgstr ""
+
+#: admin/functions/functions.options.php:176
+#@ wi
+msgid "Padding top & bottom (for not fullscreen background)"
+msgstr ""
+
+#: admin/functions/functions.options.php:183
+#@ wi
+msgid "This option is used for not-fullscreen mode."
+msgstr ""
+
+#: admin/functions/functions.options.php:188
+#: admin/functions/functions.options.php:190
+#@ wi
+msgid "Slideshow"
+msgstr ""
+
+#: admin/functions/functions.options.php:193
+#@ wi
+msgid "Slides"
+msgstr ""
+
+#: admin/functions/functions.options.php:199
+#@ wi
+msgid "Fullscreen slideshow effect (for fullscreen slideshow only)"
+msgstr ""
+
+#: admin/functions/functions.options.php:203
+#: admin/functions/functions.options.php:220
+#: inc/metabox.php:197
+#@ wi
+msgid "Fade"
+msgstr ""
+
+#: admin/functions/functions.options.php:204
+#@ wi
+msgid "Slide top"
+msgstr ""
+
+#: admin/functions/functions.options.php:205
+#@ wi
+msgid "Slide bottom"
+msgstr ""
+
+#: admin/functions/functions.options.php:206
+#@ wi
+msgid "Slide right"
+msgstr ""
+
+#: admin/functions/functions.options.php:207
+#@ wi
+msgid "Slide left"
+msgstr ""
+
+#: admin/functions/functions.options.php:208
+#@ wi
+msgid "Carousel right"
+msgstr ""
+
+#: admin/functions/functions.options.php:209
+#@ wi
+msgid "Carousel left"
+msgstr ""
+
+#: admin/functions/functions.options.php:210
+#: functions.php:379
+#@ wi
+msgid "None"
+msgstr ""
+
+#: admin/functions/functions.options.php:213
+#@ wi
+msgid "This option is used only for fullscreen slideshow."
+msgstr ""
+
+#: admin/functions/functions.options.php:216
+#@ wi
+msgid "Not fullscreen slideshow effect (for not-fullscreen slideshow only)"
+msgstr ""
+
+#: admin/functions/functions.options.php:221
+#: inc/metabox.php:197
+#@ wi
+msgid "Slide"
+msgstr ""
+
+#: admin/functions/functions.options.php:224
+#@ wi
+msgid "This option is used only for not-fullscreen slideshow."
+msgstr ""
+
+#: admin/functions/functions.options.php:227
+#@ wi
+msgid "Auto play?"
+msgstr ""
+
+#: admin/functions/functions.options.php:233
+#@ wi
+msgid "Time between 2 slides (in seconds)"
+msgstr ""
+
+#: admin/functions/functions.options.php:240
+#@ wi
+msgid "The time interval between 2 slides (if auto play is enabled)."
+msgstr ""
+
+#: admin/functions/functions.options.php:243
+#: inc/metabox.php:173
+#@ wi
+msgid "Show navigation?"
+msgstr ""
+
+#: admin/functions/functions.options.php:249
+#@ wi
+msgid "Show pager?"
+msgstr ""
+
+#: admin/functions/functions.options.php:256
+#@ wi
+msgid "Show progress bar for fullscreen slideshow?"
+msgstr ""
+
+#: admin/functions/functions.options.php:265
+#: admin/functions/functions.options.php:271
+#: admin/functions/functions.options.php:273
+#@ wi
+msgid "Header"
+msgstr ""
+
+#: admin/functions/functions.options.php:276
+#@ wi
+msgid "Header layout"
+msgstr ""
+
+#: admin/functions/functions.options.php:281
+#@ wi
+msgid "2:10"
+msgstr ""
+
+#: admin/functions/functions.options.php:282
+#@ wi
+msgid "3:9"
+msgstr ""
+
+#: admin/functions/functions.options.php:283
+#@ wi
+msgid "4:8"
+msgstr ""
+
+#: admin/functions/functions.options.php:284
+#@ wi
+msgid "5:7"
+msgstr ""
+
+#: admin/functions/functions.options.php:285
+#@ wi
+msgid "6:6"
+msgstr ""
+
+#: admin/functions/functions.options.php:287
+#@ wi
+msgid "These proportions are proportion between logo area and navigation area. If you have a big logo, you should choose 4:8 or 5:7 for example."
+msgstr ""
+
+#: admin/functions/functions.options.php:290
+#@ wi
+msgid "Header always stick?"
+msgstr ""
+
+#: admin/functions/functions.options.php:294
+#@ wi
+msgid "Turn it ON to make header is always stick at the top, on all pages (by default, it's stuck only on Onepage for navigation purpose)."
+msgstr ""
+
+#: admin/functions/functions.options.php:297
+#@ wi
+msgid "Header top black line?"
+msgstr ""
+
+#: admin/functions/functions.options.php:301
+#@ wi
+msgid "Turn it OFF if you do not want to show header top black line."
+msgstr ""
+
+#: admin/functions/functions.options.php:305
+#: admin/functions/functions.options.php:307
+#: admin/functions/functions.options.php:319
+#@ wi
+msgid "Logo"
+msgstr ""
+
+#: admin/functions/functions.options.php:312
+#@ wi
+msgid "Use text logo"
+msgstr ""
+
+#: admin/functions/functions.options.php:316
+#@ wi
+msgid "Turn it ON if you want to use text logo instead of image logo."
+msgstr ""
+
+#: admin/functions/functions.options.php:323
+#@ wi
+msgid "The best size is 200x50px"
+msgstr ""
+
+#: admin/functions/functions.options.php:326
+#@ wi
+msgid "Retina logo"
+msgstr ""
+
+#: admin/functions/functions.options.php:330
+#@ wi
+msgid "2x times your logo dimension."
+msgstr ""
+
+#: admin/functions/functions.options.php:333
+#@ wi
+msgid "Logo width (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:337
+#@ wi
+msgid "Width of your normal logo (not Retina). If you leave this field blank, the Retina logo won't work."
+msgstr ""
+
+#: admin/functions/functions.options.php:340
+#@ wi
+msgid "Logo height (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:344
+#@ wi
+msgid "Height of your normal logo (not Retina). If you leave this field blank, the Retina logo won't work."
+msgstr ""
+
+#: admin/functions/functions.options.php:347
+#@ wi
+msgid "Logo margin top (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:356
+#@ wi
+msgid "Logo margin left (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:366
+#: admin/functions/functions.options.php:368
+#: admin/functions/functions.options.php:371
+#@ wi
+msgid "Header theme"
+msgstr ""
+
+#: admin/functions/functions.options.php:373
+#: widgets/facebook.php:90
+#@ wi
+msgid "Light"
+msgstr ""
+
+#: admin/functions/functions.options.php:373
+#: widgets/facebook.php:91
+#@ wi
+msgid "Dark"
+msgstr ""
+
+#: admin/functions/functions.options.php:381
+#@ wi
+msgid "Footer"
+msgstr ""
+
+#: admin/functions/functions.options.php:386
+#@ wi
+msgid "Footer text"
+msgstr ""
+
+#: admin/functions/functions.options.php:390
+#@ wi
+msgid "HTML is allowed."
+msgstr ""
+
+#: admin/functions/functions.options.php:393
+#@ wi
+msgid "Show social icons on footer"
+msgstr ""
+
+#: admin/functions/functions.options.php:397
+#@ wi
+msgid "If turned ON, social icons will be taken from the social option area."
+msgstr ""
+
+#: admin/functions/functions.options.php:400
+#@ wi
+msgid "Social icon link target?"
+msgstr ""
+
+#: admin/functions/functions.options.php:404
+#: inc/metabox.php:130
+#@ wi
+msgid "New Tab"
+msgstr ""
+
+#: admin/functions/functions.options.php:404
+#@ wi
+msgid "Current Tab"
+msgstr ""
+
+#: admin/functions/functions.options.php:405
+#@ wi
+msgid "Open social links in current tab/window or new tab/window?"
+msgstr ""
+
+#: admin/functions/functions.options.php:408
+#@ wi
+msgid "Display social icon title"
+msgstr ""
+
+#: admin/functions/functions.options.php:412
+#@ wi
+msgid "Title is a small text appears when you hover the icon"
+msgstr ""
+
+#: admin/functions/functions.options.php:415
+#@ wi
+msgid "Footer logo"
+msgstr ""
+
+#: admin/functions/functions.options.php:419
+#@ wi
+msgid "The best size should be 100x27px"
+msgstr ""
+
+#: admin/functions/functions.options.php:422
+#@ wi
+msgid "Retina footer logo"
+msgstr ""
+
+#: admin/functions/functions.options.php:426
+#@ wi
+msgid "2x times your footer logo dimension."
+msgstr ""
+
+#: admin/functions/functions.options.php:429
+#@ wi
+msgid "Footer logo width (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:433
+#@ wi
+msgid "Width of your normal footer logo (not Retina). If you leave this field blank, the Retina footer logo won't work."
+msgstr ""
+
+#: admin/functions/functions.options.php:436
+#@ wi
+msgid "Footer logo height (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:440
+#@ wi
+msgid "Height of your normal footer logo (not Retina). If you leave this field blank, the Retina footer logo won't work."
+msgstr ""
+
+#: admin/functions/functions.options.php:456
+#@ wi
+msgid "Footer background image"
+msgstr ""
+
+#: admin/functions/functions.options.php:457
+#@ wi
+msgid "Select footer background image"
+msgstr ""
+
+#: admin/functions/functions.options.php:466
+#@ wi
+msgid "Style"
+msgstr ""
+
+#: admin/functions/functions.options.php:471
+#: admin/functions/functions.options.php:473
+#@ wi
+msgid "Color"
+msgstr ""
+
+#: admin/functions/functions.options.php:476
+#@ wi
+msgid "Primary color"
+msgstr ""
+
+#: admin/functions/functions.options.php:480
+#@ wi
+msgid "Primary color is the main color of site."
+msgstr ""
+
+#: admin/functions/functions.options.php:483
+#@ wi
+msgid "Link color"
+msgstr ""
+
+#: admin/functions/functions.options.php:489
+#@ wi
+msgid "Selection Color"
+msgstr ""
+
+#: admin/functions/functions.options.php:493
+#@ wi
+msgid "Selection color is the background color when you use mouse to select text, elements..."
+msgstr ""
+
+#: admin/functions/functions.options.php:499
+#@ wi
+msgid "Typography"
+msgstr ""
+
+#: admin/functions/functions.options.php:504
+#: admin/functions/functions.options.php:506
+#@ wi
+msgid "Font family"
+msgstr ""
+
+#: admin/functions/functions.options.php:509
+#@ wi
+msgid "Body font"
+msgstr ""
+
+#: admin/functions/functions.options.php:514
+#: admin/functions/functions.options.php:522
+#: admin/functions/functions.options.php:530
+#@ wi
+msgid "You can choose a normal font or Google font"
+msgstr ""
+
+#: admin/functions/functions.options.php:517
+#@ wi
+msgid "Heading font"
+msgstr ""
+
+#: admin/functions/functions.options.php:525
+#@ wi
+msgid "Navigation font"
+msgstr ""
+
+#: admin/functions/functions.options.php:533
+#: admin/functions/functions.options.php:535
+#@ wi
+msgid "General font size"
+msgstr ""
+
+#: admin/functions/functions.options.php:538
+#@ wi
+msgid "Body font size (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:547
+#@ wi
+msgid "H1 font size (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:556
+#@ wi
+msgid "H2 font size (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:565
+#@ wi
+msgid "H3 font size (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:574
+#@ wi
+msgid "H4 font size (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:583
+#@ wi
+msgid "H5 font size (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:592
+#@ wi
+msgid "H6 font size (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:601
+#: admin/functions/functions.options.php:603
+#@ wi
+msgid "Element font size"
+msgstr ""
+
+#: admin/functions/functions.options.php:606
+#@ wi
+msgid "Blog post title font size (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:615
+#@ wi
+msgid "Single post title font size (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:624
+#@ wi
+msgid "Page title font size (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:633
+#@ wi
+msgid "Top area Big heading size (px)"
+msgstr ""
+
+#: admin/functions/functions.options.php:645
+#: inc/headline.php:9
+#@ wi
+msgid "Blog"
+msgstr ""
+
+#: admin/functions/functions.options.php:650
+#@ wi
+msgid "Display content or excerpt"
+msgstr ""
+
+#: admin/functions/functions.options.php:653
+#: inc/metabox.php:35
+#@ wi
+msgid "Excerpt"
+msgstr ""
+
+#: admin/functions/functions.options.php:653
+#: inc/metabox.php:35
+#: inc/metabox.php:324
+#@ wi
+msgid "Content"
+msgstr ""
+
+#: admin/functions/functions.options.php:655
+#@ wi
+msgid "Select display post content or excerpt on the blog."
+msgstr ""
+
+#: admin/functions/functions.options.php:658
+#@ wi
+msgid "Featured image crop?"
+msgstr ""
+
+#: admin/functions/functions.options.php:662
+#@ wi
+msgid "If turned ON, featured images will be fixed in width/height (600x400px). If turned OFF, featured images will be fixed in width and unlimited in height (auto height, suit for portrait images)."
+msgstr ""
+
+#: admin/functions/functions.options.php:666
+#: admin/functions/functions.options.php:668
+#@ wi
+msgid "Blog meta options"
+msgstr ""
+
+#: admin/functions/functions.options.php:671
+#@ wi
+msgid "Display post date?"
+msgstr ""
+
+#: admin/functions/functions.options.php:677
+#@ wi
+msgid "Display comments link in post meta"
+msgstr ""
+
+#: admin/functions/functions.options.php:683
+#@ wi
+msgid "Display categories in post meta"
+msgstr ""
+
+#: admin/functions/functions.options.php:689
+#@ wi
+msgid "Excerpt length (words)"
+msgstr ""
+
+#: admin/functions/functions.options.php:698
+#@ wi
+msgid "Display \"Reamore\" link"
+msgstr ""
+
+#: admin/functions/functions.options.php:705
+#: admin/functions/functions.options.php:707
+#@ wi
+msgid "404 page"
+msgstr ""
+
+#: admin/functions/functions.options.php:710
+#@ wi
+msgid "404 Custom Text"
+msgstr ""
+
+#: admin/functions/functions.options.php:714
+#@ wi
+msgid "The message you want to say to your audiences when they got to 404 page. HTML is allowed."
+msgstr ""
+
+#: admin/functions/functions.options.php:720
+#@ wi
+msgid "Single"
+msgstr ""
+
+#: admin/functions/functions.options.php:726
+#: admin/functions/functions.options.php:728
+#: inc/metabox.php:60
+#@ wi
+msgid "Featured Image"
+msgstr ""
+
+#: admin/functions/functions.options.php:731
+#@ wi
+msgid "Display featured image on single post"
+msgstr ""
+
+#: admin/functions/functions.options.php:735
+#@ wi
+msgid "Turn OFF if you don't want to display featured image on single post"
+msgstr ""
+
+#: admin/functions/functions.options.php:738
+#@ wi
+msgid "Featured image thumbnail crop?"
+msgstr ""
+
+#: admin/functions/functions.options.php:740
+#: inc/metabox.php:44
+#: inc/metabox.php:52
+#: inc/metabox.php:69
+#: inc/metabox.php:78
+#: inc/metabox.php:87
+#@ wi
+msgid "Yes"
+msgstr ""
+
+#: admin/functions/functions.options.php:740
+#: inc/metabox.php:44
+#: inc/metabox.php:52
+#: inc/metabox.php:69
+#: inc/metabox.php:78
+#: inc/metabox.php:87
+#@ wi
+msgid "No"
+msgstr ""
+
+#: admin/functions/functions.options.php:743
+#@ wi
+msgid "If choose yes, featured image will be fixed in height (600x400px). Otherwise, featured image will be auto height (600px in width and height depends on each image proportion)."
+msgstr ""
+
+#: admin/functions/functions.options.php:746
+#@ wi
+msgid "Featured image link to full image?"
+msgstr ""
+
+#: admin/functions/functions.options.php:750
+#@ wi
+msgid "Turn OFF if you don't want to link featured image thumbnail to fullwidth image."
+msgstr ""
+
+#: admin/functions/functions.options.php:754
+#: admin/functions/functions.options.php:756
+#@ wi
+msgid "Meta"
+msgstr ""
+
+#: admin/functions/functions.options.php:759
+#@ wi
+msgid "Display Next / Previous links?"
+msgstr ""
+
+#: admin/functions/functions.options.php:763
+#@ wi
+msgid "Turn OFF if you don't want to display post navigation links on single post"
+msgstr ""
+
+#: admin/functions/functions.options.php:766
+#@ wi
+msgid "Display tags"
+msgstr ""
+
+#: admin/functions/functions.options.php:770
+#@ wi
+msgid "Turn OFF if you don't want to display post tags on single post"
+msgstr ""
+
+#: admin/functions/functions.options.php:773
+#@ wi
+msgid "Display authorbox"
+msgstr ""
+
+#: admin/functions/functions.options.php:777
+#@ wi
+msgid "Turn OFF if you don't want to display author box on single post"
+msgstr ""
+
+#: admin/functions/functions.options.php:783
+#@ wi
+msgid "Social"
+msgstr ""
+
+#: admin/functions/functions.options.php:801
+#@ wi
+msgid "Backup Options"
+msgstr ""
+
+#: admin/functions/functions.options.php:806
+#@ wi
+msgid "Backup and Restore Options"
+msgstr ""
+
+#: admin/functions/functions.options.php:810
+#@ wi
+msgid "You can use the two buttons below to backup your current options, and then restore it back at a later time. This is useful if you want to experiment on the options but would like to keep the old settings in case you need it back."
+msgstr ""
+
+#: admin/functions/functions.options.php:813
+#@ wi
+msgid "Transfer Theme Options Data"
+msgstr ""
+
+#: admin/functions/functions.options.php:817
+#@ wi
+msgid "You can tranfer the saved options data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click \"Import Options\"."
+msgstr ""
+
+#: comments.php:14
+#, php-format
+#@ wi
+msgid "1 Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:25
+#@ wi
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:26
+#@ wi
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:36
+#@ wi
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:50
+#@ wi
+msgid "Name"
+msgstr ""
+
+#: comments.php:55
+#: functions.php:618
+#@ wi
+msgid "Email"
+msgstr ""
+
+#: comments.php:61
+#@ wi
+msgid "Website"
+msgstr ""
+
+#: comments.php:67
+#@ wi
+msgid "Comment"
+msgstr ""
+
+#: comments.php:72
+#@ wi
+msgid "Post Comment"
+msgstr ""
+
+#: functions.php:136
+#: inc/class-tgm-plugin-activation.php:164
+#@ wi
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions.php:137
+#: inc/class-tgm-plugin-activation.php:165
+#@ wi
+msgid "Install Plugins"
+msgstr ""
+
+#: functions.php:138
+#: inc/class-tgm-plugin-activation.php:166
+#, php-format
+#@ wi
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions.php:139
+#@ wi
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:140
+#: inc/class-tgm-plugin-activation.php:168
+#, php-format
+#@ wi
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:141
+#: inc/class-tgm-plugin-activation.php:169
+#, php-format
+#@ wi
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:142
+#: inc/class-tgm-plugin-activation.php:170
+#, php-format
+#@ wi
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:143
+#: inc/class-tgm-plugin-activation.php:171
+#, php-format
+#@ wi
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:144
+#: inc/class-tgm-plugin-activation.php:172
+#, php-format
+#@ wi
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:145
+#: inc/class-tgm-plugin-activation.php:173
+#, php-format
+#@ wi
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:146
+#: inc/class-tgm-plugin-activation.php:174
+#, php-format
+#@ wi
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:147
+#: inc/class-tgm-plugin-activation.php:175
+#, php-format
+#@ wi
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:148
+#: inc/class-tgm-plugin-activation.php:176
+#@ wi
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:149
+#: inc/class-tgm-plugin-activation.php:177
+#@ wi
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:150
+#: inc/class-tgm-plugin-activation.php:178
+#: inc/class-tgm-plugin-activation.php:490
+#@ wi
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:151
+#: inc/class-tgm-plugin-activation.php:179
+#: inc/class-tgm-plugin-activation.php:1846
+#@ wi
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions.php:152
+#, php-format
+#@ wi
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: functions.php:173
+#@ wi
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:286
+#@ wi
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:353
+#@ wi
+msgid "Thumbnail"
+msgstr ""
+
+#: functions.php:396
+#@ wi
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:396
+#@ wi
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:414
+#@ wi
+msgid "Post author"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: functions.php:420
+#, php-format
+#@ wi
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:422
+#@ wi
+msgid "Edit"
+msgstr ""
+
+#: functions.php:426
+#@ wi
+msgid "Reply"
+msgstr ""
+
+#: functions.php:431
+#@ wi
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:556
+#: inc/headline.php:68
+#@ wi
+msgid "0 comments"
+msgstr ""
+
+#: functions.php:556
+#: inc/headline.php:68
+#@ wi
+msgid "1 comment"
+msgstr ""
+
+#: functions.php:556
+#: inc/headline.php:68
+#@ wi
+msgid "% comments"
+msgstr ""
+
+#: functions.php:556
+#: inc/headline.php:68
+#@ wi
+msgid "Off"
+msgstr ""
+
+#: functions.php:561
+#@ wi
+msgid "<i class=\"icon-pencil\"></i>"
+msgstr ""
+
+#: functions.php:575
+#@ wi
+msgid "Facebook"
+msgstr ""
+
+#: functions.php:576
+#@ wi
+msgid "Twitter"
+msgstr ""
+
+#: functions.php:577
+#@ wi
+msgid "Google+"
+msgstr ""
+
+#: functions.php:578
+#@ wi
+msgid "LinkedIn"
+msgstr ""
+
+#: functions.php:579
+#@ wi
+msgid "Tumblr"
+msgstr ""
+
+#: functions.php:580
+#@ wi
+msgid "Pinterest"
+msgstr ""
+
+#: functions.php:581
+#@ wi
+msgid "YouTube"
+msgstr ""
+
+#: functions.php:582
+#@ wi
+msgid "Skype"
+msgstr ""
+
+#: functions.php:583
+#@ wi
+msgid "Instagram"
+msgstr ""
+
+#: functions.php:584
+#@ wi
+msgid "Delicious"
+msgstr ""
+
+#: functions.php:585
+#@ wi
+msgid "Reddit"
+msgstr ""
+
+#: functions.php:586
+#@ wi
+msgid "StumbleUpon"
+msgstr ""
+
+#: functions.php:587
+#@ wi
+msgid "Wordpress"
+msgstr ""
+
+#: functions.php:588
+#@ wi
+msgid "Joomla"
+msgstr ""
+
+#: functions.php:589
+#@ wi
+msgid "Blogger"
+msgstr ""
+
+#: functions.php:590
+#@ wi
+msgid "Vimeo"
+msgstr ""
+
+#: functions.php:591
+#@ wi
+msgid "Yahoo!"
+msgstr ""
+
+#: functions.php:592
+#@ wi
+msgid "Flickr"
+msgstr ""
+
+#: functions.php:593
+#@ wi
+msgid "Picasa"
+msgstr ""
+
+#: functions.php:594
+#@ wi
+msgid "DeviantArt"
+msgstr ""
+
+#: functions.php:595
+#@ wi
+msgid "GitHub"
+msgstr ""
+
+#: functions.php:596
+#@ wi
+msgid "StackOverFlow"
+msgstr ""
+
+#: functions.php:597
+#@ wi
+msgid "Xing"
+msgstr ""
+
+#: functions.php:598
+#@ wi
+msgid "Flattr"
+msgstr ""
+
+#: functions.php:599
+#@ wi
+msgid "Foursquare"
+msgstr ""
+
+#: functions.php:600
+#@ wi
+msgid "Paypal"
+msgstr ""
+
+#: functions.php:601
+#@ wi
+msgid "Yelp"
+msgstr ""
+
+#: functions.php:602
+#@ wi
+msgid "SoundCloud"
+msgstr ""
+
+#: functions.php:603
+#@ wi
+msgid "Last.fm"
+msgstr ""
+
+#: functions.php:604
+#@ wi
+msgid "Lanyrd"
+msgstr ""
+
+#: functions.php:605
+#@ wi
+msgid "Dribbble"
+msgstr ""
+
+#: functions.php:606
+#@ wi
+msgid "Forrst"
+msgstr ""
+
+#: functions.php:607
+#@ wi
+msgid "Steam"
+msgstr ""
+
+#: functions.php:608
+#@ wi
+msgid "Behance"
+msgstr ""
+
+#: functions.php:609
+#@ wi
+msgid "Mixi"
+msgstr ""
+
+#: functions.php:610
+#@ wi
+msgid "Weibo"
+msgstr ""
+
+#: functions.php:611
+#@ wi
+msgid "Renren"
+msgstr ""
+
+#: functions.php:612
+#@ wi
+msgid "Evernote"
+msgstr ""
+
+#: functions.php:613
+#@ wi
+msgid "Dropbox"
+msgstr ""
+
+#: functions.php:614
+#@ wi
+msgid "Bitbucket"
+msgstr ""
+
+#: functions.php:615
+#@ wi
+msgid "Trello"
+msgstr ""
+
+#: functions.php:616
+#@ wi
+msgid "VKontakte"
+msgstr ""
+
+#: functions.php:617
+#@ wi
+msgid "Homepage"
+msgstr ""
+
+#: functions.php:619
+#@ wi
+msgid "RSS"
+msgstr ""
+
+#: functions.php:638
+#, php-format
+#@ wi
+msgid "%s Previous"
+msgstr ""
+
+#: functions.php:639
+#, php-format
+#@ wi
+msgid "Next %s"
+msgstr ""
+
+#: functions.php:661
+#@ wi
+msgid "Untitled"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:167
+#@ wi
+msgid "Something went wrong."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:180
+#, php-format
+#@ wi
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:517
+#: inc/class-tgm-plugin-activation.php:2058
+#@ wi
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:545
+#, php-format
+#@ wi
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:704
+#@ wi
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1091
+#@ wi
+msgid "External Link"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1096
+#@ wi
+msgid "Private Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1099
+#@ wi
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1103
+#@ wi
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1106
+#@ wi
+msgid "Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1106
+#@ wi
+msgid "Recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1109
+#@ wi
+msgid "Not Installed"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1111
+#@ wi
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1281
+#, php-format
+#@ wi
+msgid "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1297
+#@ wi
+msgid "Plugin"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1298
+#@ wi
+msgid "Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1299
+#@ wi
+msgid "Type"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1300
+#@ wi
+msgid "Status"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1318
+#@ wi
+msgid "Install"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1319
+#@ wi
+msgid "Activate"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1544
+#@ wi
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:1829
+#@ wi
+msgid "Install package not available."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1830
+#, php-format
+#@ wi
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1831
+#@ wi
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1832
+#@ wi
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1833
+#@ wi
+msgid "Plugin install failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1834
+#@ wi
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1845
+#@ wi
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1955
+#@ wi
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1956
+#, php-format
+#@ wi
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1956
+#: inc/class-tgm-plugin-activation.php:1965
+#@ wi
+msgid "Show Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1956
+#: inc/class-tgm-plugin-activation.php:1965
+#@ wi
+msgid "Hide Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1957
+#@ wi
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1958
+#, php-format
+#@ wi
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1962
+#@ wi
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1963
+#, php-format
+#@ wi
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1964
+#, php-format
+#@ wi
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1965
+#, php-format
+#@ wi
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1966
+#@ wi
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1967
+#, php-format
+#@ wi
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/headline.php:10
+#@ wi
+msgid "Just tell your stories."
+msgstr ""
+
+#: inc/headline.php:17
+#, php-format
+#@ wi
+msgid "%s result(s) found."
+msgstr ""
+
+#: inc/headline.php:39
+#, php-format
+#@ wi
+msgid "<span>%1$s</span> has %2$s articles published."
+msgstr ""
+
+#: inc/headline.php:41
+#@ wi
+msgid "Not found"
+msgstr ""
+
+#: inc/headline.php:45
+#, php-format
+#@ wi
+msgid " - Page %d"
+msgstr ""
+
+#: inc/metabox.php:16
+#@ wi
+msgid "Post Options"
+msgstr ""
+
+#: inc/metabox.php:26
+#@ wi
+msgid "Blog Display"
+msgstr ""
+
+#: inc/metabox.php:31
+#@ wi
+msgid "Display excerpt or content?"
+msgstr ""
+
+#: inc/metabox.php:34
+#@ wi
+msgid "Select display post content or excerpt of this post on the blog."
+msgstr ""
+
+#: inc/metabox.php:36
+#: inc/metabox.php:45
+#: inc/metabox.php:53
+#: inc/metabox.php:70
+#: inc/metabox.php:79
+#: inc/metabox.php:88
+#: inc/metabox.php:131
+#: inc/metabox.php:198
+#: inc/metabox.php:272
+#: inc/metabox.php:335
+#@ wi
+msgid "Select"
+msgstr ""
+
+#: inc/metabox.php:40
+#@ wi
+msgid "Blog thumbnail crop?"
+msgstr ""
+
+#: inc/metabox.php:43
+#@ wi
+msgid "Select <strong>Yes</strong> if you want to display featured image of this post in fixed width/height (600x400) on the blog. Select <strong>No</strong> otherwise."
+msgstr ""
+
+#: inc/metabox.php:49
+#@ wi
+msgid "Blog thumbnail link to post?"
+msgstr ""
+
+#: inc/metabox.php:65
+#@ wi
+msgid "Show featured Image?"
+msgstr ""
+
+#: inc/metabox.php:68
+#@ wi
+msgid "Select <strong>Yes</strong> if you want to display featured image at the top of your post. Select <strong>No</strong> otherwise."
+msgstr ""
+
+#: inc/metabox.php:74
+#@ wi
+msgid "Link to full image?"
+msgstr ""
+
+#: inc/metabox.php:77
+#@ wi
+msgid "Select <strong>Yes</strong> if you want to link your image to full-width image. Select <strong>No</strong> otherwise."
+msgstr ""
+
+#: inc/metabox.php:83
+#@ wi
+msgid "Featured Image Crop?"
+msgstr ""
+
+#: inc/metabox.php:86
+#@ wi
+msgid "If choose crop, featured image will be fixed in height (770x420px). If choose nocrop, featured image will be auto height (770px in width and height depends on each image proportion)."
+msgstr ""
+
+#: inc/metabox.php:94
+#@ wi
+msgid "Video & Audio format options"
+msgstr ""
+
+#: inc/metabox.php:99
+#@ wi
+msgid "Video / Audio Code"
+msgstr ""
+
+#: inc/metabox.php:102
+#@ wi
+msgid "YouTube, Vimeo, SoundCloud..."
+msgstr ""
+
+#: inc/metabox.php:106
+#@ wi
+msgid "Self-hosted video / audio URL"
+msgstr ""
+
+#: inc/metabox.php:109
+#@ wi
+msgid "If you have a self-hosted video/audio file, please paste the file URL here. Eg: <em>http://yourdomain.com/path/path/file.mp3</em>"
+msgstr ""
+
+#: inc/metabox.php:115
+#@ wi
+msgid "Link format options"
+msgstr ""
+
+#: inc/metabox.php:120
+#@ wi
+msgid "URL"
+msgstr ""
+
+#: inc/metabox.php:123
+#@ wi
+msgid "Enter URL, start with http:// or https://"
+msgstr ""
+
+#: inc/metabox.php:127
+#@ wi
+msgid "Link target"
+msgstr ""
+
+#: inc/metabox.php:130
+#@ wi
+msgid "Same tab"
+msgstr ""
+
+#: inc/metabox.php:137
+#@ wi
+msgid "Quote format options"
+msgstr ""
+
+#: inc/metabox.php:142
+#@ wi
+msgid "Quote content"
+msgstr ""
+
+#: inc/metabox.php:148
+#@ wi
+msgid "Quote author name"
+msgstr ""
+
+#: inc/metabox.php:154
+#@ wi
+msgid "Quote author URL?"
+msgstr ""
+
+#: inc/metabox.php:162
+#@ wi
+msgid "Gallery options"
+msgstr ""
+
+#: inc/metabox.php:167
+#@ wi
+msgid "Upload Images"
+msgstr ""
+
+#: inc/metabox.php:180
+#@ wi
+msgid "Auto play"
+msgstr ""
+
+#: inc/metabox.php:187
+#@ wi
+msgid "Smooth Height?"
+msgstr ""
+
+#: inc/metabox.php:194
+#@ wi
+msgid "Effect"
+msgstr ""
+
+#: inc/metabox.php:225
+#@ wi
+msgid "Page Options"
+msgstr ""
+
+#: inc/metabox.php:234
+#@ wi
+msgid "Title Options"
+msgstr ""
+
+#: inc/metabox.php:239
+#@ wi
+msgid "Subtitle"
+msgstr ""
+
+#: inc/metabox.php:242
+#@ wi
+msgid "Subtitle appears below page title"
+msgstr ""
+
+#: inc/metabox.php:246
+#@ wi
+msgid "Title image"
+msgstr ""
+
+#: inc/metabox.php:249
+#@ wi
+msgid "Title image appears above page title."
+msgstr ""
+
+#: inc/metabox.php:253
+#@ wi
+msgid "Separator Area"
+msgstr ""
+
+#: inc/metabox.php:259
+#@ wi
+msgid "Disable page separator?"
+msgstr ""
+
+#: inc/metabox.php:262
+#@ wi
+msgid "You may want to disable page separator for first page."
+msgstr ""
+
+#: inc/metabox.php:267
+#@ wi
+msgid "Background image or Pattern?"
+msgstr ""
+
+#: inc/metabox.php:270
+#@ wi
+msgid "Select to display background image or a pattern in this area."
+msgstr ""
+
+#: inc/metabox.php:271
+#@ wi
+msgid "Pattern"
+msgstr ""
+
+#: inc/metabox.php:276
+#@ wi
+msgid "Background image?"
+msgstr ""
+
+#: inc/metabox.php:279
+#@ wi
+msgid "Any size works on Chrome, Firefox and Safari, but at least 1366px width to work on IE8"
+msgstr ""
+
+#: inc/metabox.php:283
+#@ wi
+msgid "Overlay's Opacity"
+msgstr ""
+
+#: inc/metabox.php:286
+#@ wi
+msgid "A number in the interval from 0 to 100. Overlay is a layer that makes background more gentle."
+msgstr ""
+
+#: inc/metabox.php:294
+#@ wi
+msgid "Clipmask Opacity?"
+msgstr ""
+
+#: inc/metabox.php:297
+#@ wi
+msgid "Clipmask is a stripe layer that covers background image. If you do not want to show it, just set opacity to 0."
+msgstr ""
+
+#: inc/metabox.php:305
+#@ wi
+msgid "Enable parallax effect?"
+msgstr ""
+
+#: inc/metabox.php:308
+#@ wi
+msgid "Parallax Effect is the effect that looks like background image is moving."
+msgstr ""
+
+#: inc/metabox.php:313
+#@ wi
+msgid "Padding top and bottom"
+msgstr ""
+
+#: inc/metabox.php:320
+#@ wi
+msgid "(px)"
+msgstr ""
+
+#: inc/metabox.php:327
+#@ wi
+msgid "Use shortcodes to display content"
+msgstr ""
+
+#: inc/metabox.php:332
+#@ wi
+msgid "Select predefined pattern"
+msgstr ""
+
+#: inc/metabox.php:339
+#@ wi
+msgid "Custom pattern"
+msgstr ""
+
+#: inc/metabox.php:342
+#@ wi
+msgid "Upload "
+msgstr ""
+
+#: inc/metabox.php:346
+#@ wi
+msgid "Retina custom pattern"
+msgstr ""
+
+#: inc/metabox.php:349
+#@ wi
+msgid "An image of custom pattern with double size for Retina display."
+msgstr ""
+
+#: loop/content-audio.php:46
+#: loop/content-gallery.php:43
+#: loop/content-video.php:46
+#: loop/content.php:54
+#@ wi
+msgid "Read more"
+msgstr ""
+
+#: loop/content-audio.php:52
+#: loop/content-gallery.php:49
+#: loop/content-link.php:26
+#: loop/content-video.php:52
+#: loop/content.php:60
+#@ wi
+msgid "Continue Reading"
+msgstr ""
+
+#: page.php:10
+#: single.php:140
+#@ wi
+msgid "Pages:"
+msgstr ""
+
+#: searchform.php:5
+#@ wi
+msgid "Search"
+msgstr ""
+
+#: single.php:116
+#@ wi
+msgid "Open link"
+msgstr ""
+
+#: single.php:147
+#@ wi
+msgid "<i class=\"icon-chevron-left\"></i> Previous Post"
+msgstr ""
+
+#: single.php:151
+#@ wi
+msgid "Next Post <i class=\"icon-chevron-right\"></i>"
+msgstr ""
+
+#: single.php:173
+#, php-format
+#@ wi
+msgid "About %s"
+msgstr ""
+
+#: widgets/ads.php:15
+#@ wi
+msgid "Advertisement"
+msgstr ""
+
+#: widgets/ads.php:17
+#@ wi
+msgid "Wi:Advertisement"
+msgstr ""
+
+#: widgets/ads.php:66
+#: widgets/facebook.php:79
+#: widgets/google-plus.php:174
+#: widgets/media.php:60
+#@ wi
+msgid "Title:"
+msgstr ""
+
+#: widgets/ads.php:78
+#, php-format
+#@ wi
+msgid "Advertisement %s"
+msgstr ""
+
+#: widgets/ads.php:80
+#@ wi
+msgid "Ad URL"
+msgstr ""
+
+#: widgets/ads.php:84
+#@ wi
+msgid "URL Target:"
+msgstr ""
+
+#: widgets/ads.php:86
+#@ wi
+msgid "New window"
+msgstr ""
+
+#: widgets/ads.php:87
+#@ wi
+msgid "Current window"
+msgstr ""
+
+#: widgets/ads.php:91
+#@ wi
+msgid "Ad Width:"
+msgstr ""
+
+#: widgets/ads.php:99
+#@ wi
+msgid "Image URL"
+msgstr ""
+
+#: widgets/ads.php:104
+#@ wi
+msgid "Custom Code"
+msgstr ""
+
+#: widgets/facebook.php:8
+#@ wi
+msgid "Facebook Likebox Widget"
+msgstr ""
+
+#: widgets/facebook.php:10
+#@ wi
+msgid "Wi:Facebook"
+msgstr ""
+
+#: widgets/facebook.php:82
+#@ wi
+msgid "Page URL:"
+msgstr ""
+
+#: widgets/facebook.php:86
+#@ wi
+msgid "Show Faces?"
+msgstr ""
+
+#: widgets/facebook.php:88
+#@ wi
+msgid "Color Scheme:"
+msgstr ""
+
+#: widgets/facebook.php:95
+#@ wi
+msgid "Show Stream?"
+msgstr ""
+
+#: widgets/facebook.php:97
+#@ wi
+msgid "Border Color:"
+msgstr ""
+
+#: widgets/facebook.php:101
+#@ wi
+msgid "Show Header?"
+msgstr ""
+
+#: widgets/google-plus.php:46
+#@ wi
+msgid "Wi:Google Plus Badge"
+msgstr ""
+
+#: widgets/google-plus.php:49
+#@ wi
+msgid "Google Plus badge."
+msgstr ""
+
+#: widgets/google-plus.php:180
+#@ wi
+msgid "Profile Id"
+msgstr ""
+
+#: widgets/google-plus.php:186
+#@ wi
+msgid "Width"
+msgstr ""
+
+#: widgets/google-plus.php:192
+#@ wi
+msgid "Badge Type"
+msgstr ""
+
+#: widgets/google-plus.php:202
+#@ wi
+msgid "Profile Type"
+msgstr ""
+
+#: widgets/media.php:15
+#@ wi
+msgid "Video / Soundcloud Widget"
+msgstr ""
+
+#: widgets/media.php:17
+#@ wi
+msgid "Wi:Video / SoundCloud"
+msgstr ""
+
+#: widgets/media.php:65
+#@ wi
+msgid "Video / SoundCloud Code"
+msgstr ""
+
+#: widgets/media.php:67
+#@ wi
+msgid "Insert Youtube URL, Vimeo URL or SoundCloud URL (NOT iframe or ID, but <strong>URL</strong>)"
+msgstr ""
+

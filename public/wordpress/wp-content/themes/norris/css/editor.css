@@ -1,0 +1,77 @@
+/*
+Description: Used to style the TinyMCE editor.
+*/
+
+html {
+	font-size: 87.5%;
+}
+html .mceContentBody {
+	max-width: 625px;
+}
+
+/* =Headings
+-------------------------------------------------------------- */
+
+/* =Text elements
+-------------------------------------------------------------- */
+
+/* =Alignment
+-------------------------------------------------------------- */
+
+/* =Tables
+-------------------------------------------------------------- */
+
+/* =Images
+-------------------------------------------------------------- */
+
+img,
+.editor-attachment {
+	border: 0;
+	max-width: 100%;
+}
+img.size-full {
+	width: auto/9; /* Prevent stretching of full-size images in IE8 */
+}
+img[class*="wp-image-"] {
+	height: auto;
+	max-width: 100%;
+}
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+img.mce-wp-nextpage {
+	border-radius: 0;
+	box-shadow: none;
+}
+img.wp-smiley {
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+.wp-caption {
+	background: transparent;
+	border: none;
+	margin: 0;
+	padding: 4px;
+	text-align: left;
+	max-width:100%;
+	border:1px solid #ccc;
+	box-sizing:border-box;
+}
+.wp-caption-dt {
+	margin: 0;
+}
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
+	color: #757575;
+	font-style: italic;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 2;
+	margin: 5px 5px 0;
+}

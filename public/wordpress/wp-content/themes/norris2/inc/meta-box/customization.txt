@@ -1,0 +1,5 @@
+- add "max" for number field: meta-box/inc/fields/number.php
+
+- add IDs for wrapper elements: meta-box/meta-box.php, line 372, 373
+
+- add CSS in meta-box/css/style.css

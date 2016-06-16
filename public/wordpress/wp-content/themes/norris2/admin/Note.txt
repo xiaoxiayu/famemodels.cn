@@ -1,0 +1,6 @@
+This has been modified from the original SMOF.
+
+- assets/css/admin-style.css
+- images
+- assets/smof.js: slider
+- classes/class.options_machine.php: slider

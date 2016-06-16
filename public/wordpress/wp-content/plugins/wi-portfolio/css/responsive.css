@@ -1,0 +1,94 @@
+@import url('bootstrap-responsive.min.css');
+
+@media (min-width: 1200px) {
+	
+}
+	
+@media (min-width: 768px) and (max-width: 979px) {	
+		
+	/* Portfolio
+	-------------------------------------------------- */
+	.wi-portfolio .portfolio-item,
+	.wi-portfolio.portfolio-2 .portfolio-item,
+	.wi-portfolio.portfolio-3 .portfolio-item,
+	.wi-portfolio.portfolio-4 .portfolio-item {
+		width:50%;
+		}
+	#portfolio-content .thumb,
+	#portfolio-content .details	{
+		width:100%;
+		padding-right:0;
+		}
+	#portfolio-content .thumb {
+		margin-bottom:20px;
+		text-align:center;
+		}
+	#portfolio-content .thumb img {
+		display:inline-block;
+		}	
+	#portfolio-content .thumb .media-container {
+		margin-bottom:0;
+		}	
+	}
+
+@media (max-width: 767px) {	
+	/* Portfolio
+	-------------------------------------------------- */
+	.wi-portfolio-filter ul {
+		display:block;
+		}
+	.wi-portfolio-filter ul li {
+		width:50%;
+		}
+	.wi-portfolio-filter ul li a {
+		margin:0 10px 10px 0;
+		}	
+	.wi-portfolio .portfolio-item,
+	.wi-portfolio.portfolio-2 .portfolio-item,
+	.wi-portfolio.portfolio-3 .portfolio-item,
+	.wi-portfolio.portfolio-4 .portfolio-item {
+		width:100%;
+		}
+	
+		/* Ajax */
+	#portfolio-content .thumb,
+	#portfolio-content .details	{
+		width:100%;
+		padding-right:0;
+		}
+	#portfolio-content .thumb {
+		margin-bottom:20px;
+		text-align:center;
+		}
+	#portfolio-content .thumb img {
+		display:inline-block;
+		}	
+	#portfolio-content .thumb .media-container {
+		margin-bottom:0;
+		}
+		
+		/* Flexslider */
+	.portfolio-thumb-slider .flexslider .flex-direction-nav a {
+		width:32px;
+		height:32px;
+		margin-top:-16px;
+		-webkit-background-size: 9px 14px;
+		-mou-background-size: 9px 14px;
+		background-size: 9px 14px;
+		}
+	.portfolio-thumb-slider .flexslider .flex-direction-nav .flex-next {
+		right:0;
+		}
+	.portfolio-thumb-slider .flexslider .flex-direction-nav .flex-prev {
+		left:0;
+		}		
+}
+
+@media (max-width: 479px) {
+	.portfolio-navi ul li a span {
+		font-size:14px;		
+		}
+	.portfolio-navi ul li a i {
+		top:0;
+		}	
+}

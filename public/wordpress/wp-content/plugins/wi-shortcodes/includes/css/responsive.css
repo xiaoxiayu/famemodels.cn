@@ -1,0 +1,91 @@
+@media (min-width: 768px) and (max-width: 979px) {
+		/* Iconbox */
+	.wi-dropcap {
+		width:77px;
+		height:77px;
+		}
+		/* Count */
+	.wi-count .number {
+		font-size:56px;
+		height:89px;
+		line-height:89px;
+		}
+	.wi-count .digit-con {
+		height:89px;
+		}
+	.wi-count .comma {
+		top:-21px;
+		}
+	.wi-count .name {
+		font-size:18px;
+		}
+	.progress-group .fore .bar {
+		left:0;
+		}
+	.progress-group .fore .name {
+		color:#fff;
+		}	
+	.wi-pricing.pricing-4 .pricing-column {
+		width:50%;
+		margin-bottom:20px;
+		}
+	.wi-pricing.pricing-4 .pricing-column:first-child,
+	.wi-pricing.pricing-4 .pricing-column.featured {
+		margin-left:-1px;
+		}
+}
+
+@media (max-width: 767px) {
+		/* Column */
+	.wi-column {
+		width:100% !important;
+		margin-right:0 !important;
+		}
+	
+		/* Pricing */
+	.wi-dropcap {
+		width:88px;
+		height:88px;
+		}
+	.brands .brand {
+		width:50% !important;
+		}
+	.progress-group .fore .bar {
+		left:0;
+		}
+	.progress-group .fore .name {
+		color:#fff;
+		}
+	.testimonial-slider .flexslider {
+		padding-left:20px;
+		padding-right:20px;
+		}
+	.wi-pricing .pricing-column {
+		width:100% !important;
+		margin:0 0 20px !important;
+		}
+	.wi-pricing .pricing-column.featured {
+		-webkit-transform:none;
+		-moz-transform:none;
+		-ms-transform:none;
+		-o-transform:none;
+		transform:none;
+		}	
+	
+	/* testimonial slider */
+	.testimonial-slider .flex-control-paging li a {
+		width:12px;
+		height:12px;
+		}	
+		
+}
+
+@media (max-width: 480px) {
+	.brands .brand {
+		width:100% !important;
+		text-align:center;
+		}
+	.wi-testimonial .content {
+		font-size:14px;
+		}
+}

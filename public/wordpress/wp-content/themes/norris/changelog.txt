@@ -1,0 +1,28 @@
+v1.7
+//	new Post/Page/Portfolio Options
+//	fix gallery post options
+//	fix Footer Background Color Option
+//	add pagination for portfolio
+//	fix google font array issue
+//	fix "gap issue" when scroll from top area
+//	update wi_pagination function
+//	fullwidth shortcode
+//	WooCommerce compatible
+//	fix ipad menu issue (by using Superfish :lol:)
+- footer and header WPML
+---------------- fix slider Crash on mobile
+//	fix Onepage/Multipages...
+- show nice sites
+//	background image option
+//	fix parallax issue completely on iOS
+//	fix twitter slider issue (enqueue flexslider)
+//	Blog Shortcode
+//	Add visual Javascript
+- Cache for ajax
+//	Add missing Bootstrap file
+//	Add missing Icons for Portfolio Lightbox
+//	fix primary menu when having no page item
+//	fix top area slider progress bar
+//	nicer mobile menu
+//	add iconlist shortcode
+- boxed and wide layout

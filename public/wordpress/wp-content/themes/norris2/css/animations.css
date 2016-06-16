@@ -1,0 +1,72 @@
+	/* General */
+.wi-animated {
+	-webkit-animation-fill-mode:both;
+	-moz-animation-fill-mode:both;
+	-ms-animation-fill-mode:both;
+	-o-animation-fill-mode:both;
+	animation-fill-mode:both;
+	-webkit-animation-duration:0.8s;
+	-moz-animation-duration:0.8s;
+	-ms-animation-duration:0.8s;
+	-o-animation-duration:0.8s;
+	animation-duration:0.8s
+	}
+	
+	/* FadeIn */
+.wi-fadeInFade {
+	-webkit-animation-name:fadeInFade;
+	-moz-animation-name:fadeInFade;
+	-o-animation-name:fadeInFade;
+	animation-name:fadeInFade
+	}	
+@-webkit-keyframes fadeInFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeInFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeInFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Opacity 0 
+	----------------------------------------------------------- */
+	/* shortcodes */
+.js .pricing-column,	
+	/* portfolio items */
+.js .portfolio-item {
+	opacity:0;
+	}
+	
+/* Opacity 1
+----------------------------------------------------------- */
+	/* shortcodes */
+.no-csstransition .pricing-column,	
+
+	/* portfolio items */
+.no-csstransition .portfolio-item {
+	opacity:1;
+	}

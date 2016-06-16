@@ -1,0 +1,638 @@
+@import url('bootstrap-responsive.min.css');
+
+@media (min-width: 1200px) {
+	.container {
+		width:940px;
+	}
+}
+	
+@media (min-width: 768px) and (max-width: 979px) {
+	.container {
+		width:724px;
+		}
+	h1 {
+		font-size:29px;
+		}
+	h2 {
+		font-size:23px;
+		}
+	h3 {
+		font-size:18px;
+		}
+	h4, h5, h6 {
+		font-size:14px;
+		}				
+	#wi-mainnav ul.menu > li {
+		margin-left:8px;
+		margin-right:8px;
+		}
+		
+	/* Top area
+	-------------------------------------------------- */
+	#wi-top-area {
+		padding:70px 42px;
+		}
+	#wi-top-area .heading-text {
+		font-size:70px;
+		}	
+	.text-slider {
+		font-size:42px;
+		}
+	
+	/* Onepage
+	-------------------------------------------------- */
+	.page-separator {
+		}	
+	.wi-page .title-area .pad {
+		padding:0 20px;
+		}
+	.wi-divider .title {
+		font-size:26px;
+		}		
+	.wi-tweets .flexslider {
+		padding:0 20px 80px;
+		}
+	
+	/* Shortcodes
+	-------------------------------------------------- */
+	.wi-small-iconbox .iconbox-title i {
+		margin-right:5px;
+		}
+	.wi-small-iconbox .iconbox-title .title {
+		font-size:13px;
+		}	
+	.wi-dropcap {
+		width:77px;
+		height:77px;
+		}
+		/* Count */
+	.wi-count .number {
+		font-size:56px;
+		height:89px;
+		}
+	.wi-count .digit-con {
+		height:89px;
+		}
+	.wi-count .comma {
+		top:-21px;
+		}
+	.wi-count .name {
+		font-size:18px;
+		}
+	.progress-group .fore .bar {
+		left:0;
+		}
+	.progress-group .fore .name {
+		color:#fff;
+		}	
+	.wi-pricing.pricing-4 .pricing-column {
+		width:50%;
+		margin-bottom:20px;
+		}
+	.wi-pricing.pricing-4 .pricing-column:first-child,
+	.wi-pricing.pricing-4 .pricing-column.featured {
+		margin-left:-1px;
+		}
+	
+	/* Blog
+	-------------------------------------------------- */
+	#primary {
+		padding-right:10px;
+		}
+	.article .title {
+		font-size:21px;
+		}
+	.post-title {
+		font-size:35px;
+		}
+	.authorbox {
+		padding:10px;
+		}	
+	.authorbox .author-avatar {
+		margin-right:20px;
+		}
+		
+	/* Misc
+	-------------------------------------------------- */
+	.wpcf7 .input {
+		width:100%;
+		margin:0;
+		float:none;
+		clear:both;
+		}
+	
+	/* Recent Items Shortcode
+	-------------------------------------- */
+	.wi-recent-posts.style-2 .recent-item {
+		float:none;
+		width:100% !important;
+		padding:20px 0 0;
+		}
+	.wi-recent-posts.style-2 .recent-item:first-child {
+		padding-top:0;
+		}
+	.wi-recent-posts.style-2 .recent-item .post-thumbnail {
+		float:left;
+		margin-right:20px;
+		width:170px;
+		}		
+	
+}
+
+@media (max-width: 767px) {
+	body {
+		padding-left:0;
+		padding-right:0;
+		}
+	.container {
+		width:440px;
+	}
+	.gallery-item {
+		width:33.3%;
+		}
+	blockquote {
+		margin-left:0;
+		padding-right:0;
+		padding-left:20px;
+		}
+	blockquote p {
+		font-size:18px;
+		}
+	.wi-tweets .flexslider {
+		padding:0 0px 80px;
+		}		
+	
+	/* Top area
+	-------------------------------------------------- */
+	#wi-top-area {
+		padding:70px 42px;
+		background-attachment:scroll;
+		}
+	#wi-top-area .heading-text {
+		font-size:70px;
+		}
+	#wi-top-area .wi-button .btn {
+		padding:6px 14px;
+		font-size:13px;
+		}
+	#wi-top-area.type-bg-slider .text,
+	#wi-top-area.type-bg-slider .wi-button {
+		position: absolute !important; 
+		left: -7000px; 
+		overflow:hidden; 
+		clip: rect(1px 1px 1px 1px);
+		}
+	.header-slider .flexslider .flex-direction-nav a {
+		width:36px;
+		height:36px;
+		}
+	.text-slider {
+		font-size:30px;
+		}
+	#prevslide,#nextslide {
+		width:32px;
+		height:32px;
+		margin-top:-16px;
+		-webkit-background-size: 9px 14px;
+		-mou-background-size: 9px 14px;
+		background-size: 9px 14px;
+		}
+	#prevslide {
+		left:0;
+		}
+	#nextslide {
+		right:0;
+		}	
+	
+	/* Header
+	-------------------------------------------------- */
+	#wi-header {
+		padding:5px 0;
+		position:relative;
+		}
+	#wi-header .container .span9 {
+		min-height:0;
+		}	
+	#wi-logo {
+		margin:0;
+		overflow:hidden;
+		float:left;
+	}
+	#wi-logo a {
+		display:block;
+		}
+	#wi-logo img {
+		display:block;
+		max-height:100%;
+		width:auto;
+		height:30px;
+		margin-top:5px;
+		margin-bottom:5px;
+		}
+	#wi-mainnav-mobile {
+		display:block;
+		position:absolute;
+		right:10px;
+		top:50%;
+		width:100px;
+		height:20px;
+		margin-top:-10px;
+		}
+	#wi-mainnav {
+		display:none;
+		}
+		
+	/* Site
+	-------------------------------------------------- */	
+	.contactform .input {
+		width:100%;
+		float:none;
+		margin-bottom:10px;
+		margin:0;
+		}
+	#wi-footer .social ul li a {
+		margin-left:6px;
+		margin-right:6px;
+		}
+	#scrollup {
+		width:32px;
+		height:32px;
+		bottom:8px;
+		right:8px;
+		-webkit-background-size: 15px 10px;
+    	background-size: 15px 10px;
+		}
+	#primary {
+		padding-right:0;
+		}
+			
+
+	/* Shortcodes
+	-------------------------------------------------- */	
+	.wi-dropcap {
+		width:88px;
+		height:88px;
+		}
+	.brands img {
+		width:50%;
+		}
+	.progress-group .fore .bar {
+		left:0;
+		}
+	.progress-group .fore .name {
+		color:#fff;
+		}
+	.testimonial-slider .flexslider {
+		padding-left:20px;
+		padding-right:20px;
+		}
+	.wi-pricing .pricing-column {
+		width:100% !important;
+		margin:0 0 20px !important;
+		}		
+	
+	/* Onepage
+	-------------------------------------------------- */
+	.wi-page .title-area .subtitle {
+		font-size:13px;
+		}
+	.page-separator {
+		padding-left:20px;
+		padding-right:20px;
+		}	
+	.page-separator blockquote p {
+		font-size:26px;
+		}	
+	.wi-page .title-area .pad {
+		padding-left:0px;
+		padding-right:0px;
+		}
+	.post-title {
+		font-size:25px;
+		}
+	.headline {
+		background-size:400px;
+		}
+	.headline .pad {
+		padding-left:0;
+		padding-right:0;
+		}		
+	.headline .meta {
+		font-size:11px;
+		letter-spacing:1px;
+		}
+	.headline .meta .ele,
+	.headline .meta .ele:before {
+		margin-right:6px;
+		}
+	.tweets-slider .flexslider {
+		padding:0 0 60px;
+		font-size:14px;
+		}
+		
+	/* Blog
+	-------------------------------------------------- */	
+	.article {
+		}	
+	.article .title {
+		font-size:22px;
+		}
+	.authorbox .author-avatar {
+		margin-right:20px;
+		}			
+		/* comments */
+	.commentlist ol.children {
+		margin-left:28px;
+		}
+	
+	/* Pagination
+	-------------------------------------------------- */
+	.wi-pagination {
+		margin-top:0;
+		}
+	.wi-pagination > ul > li.li-navi,
+	.wi-pagination > ul > li.li-navi {
+		float:none;
+		display:block;
+		clear:both;
+		text-align:center;
+		padding:15px auto;
+		}
+	.wi-pagination > ul > li.li-navi a,
+	.wi-pagination > ul > li.li-navi a {
+		display:inline-block;
+		
+		}
+	.wi-pagination > ul > li > .prev:before,
+	.wi-pagination > ul > li > .next:before,
+	.wi-pagination > ul > li > .prev:after,
+	.wi-pagination > ul > li > .next:after {
+		display:none;
+	}
+	
+	/* Misc
+	-------------------------------------------------- */
+	.wpcf7 .input {
+		width:100%;
+		margin:0;
+		float:none;
+		clear:both;
+		}
+		
+	/* Recent Items Shortcode
+	-------------------------------------- */
+	.wi-recent-posts.style-2 .recent-item {
+		float:none;
+		width:100% !important;
+		padding:20px 0 0;
+		}
+	.wi-recent-posts.style-2 .recent-item:first-child {
+		padding-top:0;
+		}	
+}
+
+@media (max-width: 479px) {
+	body {
+		padding-left:0px;
+		padding-right:0px;
+		}
+	.container {
+		width:300px;
+		}
+	#wi-footer .social ul li a {
+		margin-left:10px;
+		margin-right:10px;
+		}
+	.headline {
+		background-size:300px;
+		}		
+	.post-title {
+		font-size:28px;
+		}
+	h1 {
+		font-size:26px;
+		}
+	h2 {
+		font-size:22px;
+		}
+	h3 {
+		font-size:16px;
+		}
+	h4, h5, h6 {
+		font-size:13px;
+		}			
+	
+	/* Top area
+	-------------------------------------------------- */
+	#wi-top-area {
+		padding:70px 20px;
+		}
+	#wi-top-area.type-slider-fullscreen {
+		padding-left:36px;
+		padding-right:36px;		
+		}	
+	#wi-top-area .heading-text {
+		font-size:60px;
+		}	
+	#wi-top-area .small-text {
+		font-size:11px;
+		}
+		
+	/* Onepage
+	-------------------------------------------------- */
+	.wi-page .title-area {
+		background-size:300px;
+		}
+	.wi-page .title-area .title {
+		font-size:50px;
+		}
+	.wi-page .title-area .subtitle {
+		font-size:11px;
+		}
+	.page-separator {
+		padding-left:10px;
+		padding-right:10px;
+		}
+	.page-separator blockquote {
+		margin-left:0;
+		padding-left:0;
+		padding-right:0;
+		}		
+	.page-separator blockquote p {
+		font-size:24px;
+		}
+	.wi-divider .title {
+		font-size:22px;
+		}
+	
+		
+	/* Shortcodes
+	-------------------------------------------------- */
+	.brands img {
+		width:100%;
+		}
+	.wi-testimonial .content {
+		font-size:14px;
+		}
+	
+	/* Blog
+	-------------------------------------------------- */
+	.article .title {
+		font-size:18px;
+		}
+	.article .meta .ele {
+		margin-bottom:5px;
+		}	
+	.headline .meta {
+		text-align:center;
+		}
+	.headline .meta .ele {
+		display:inline-block;
+		float:none;
+		font-size:11px;
+		letter-spacing:0;
+		}	
+	.post-nav .ele a {
+		font-size:14px;
+		}
+	.authorbox .inner {
+		overflow:hidden;
+		}
+	.authorbox .author-avatar {
+		margin-bottom:16px;
+		}	
+	.authorbox .text {
+		float:left;
+		}	
+	.comments-title {
+		font-size:50px;
+		}
+	
+		/* Comments */
+	.commentlist .comment-avatar {
+		margin-right:20px;
+		width:60px;
+	}
+	.commentlist .text {
+		display:block;
+	}
+	.commentlist header {
+		clear:none;
+		overflow:visible;
+	}
+	.commentlist .fn span {
+		margin-left:0;
+		clear:both;
+		margin-bottom:5px;
+	}
+	.commentlist ol.children {
+		margin-left:24px;
+	}
+	
+		/* Recent Posts */
+	.recent-item .post-thumbnail {
+		width:60px;
+		height:60px;
+		margin-right:12px;
+		padding:3px;
+		}
+	.recent-item .post-thumbnail .format-icon {
+		height:60px;
+		}
+	
+}
+
+
+/* ------------------------------------------------------- 		WOOCOMMERCE 	----------------------------------------------------------- */
+
+@media (max-width: 979px) {
+
+			/* LAYOUT */
+	.woocommerce ul.products li.product,
+	.woocommerce-page ul.products li.product {
+		width:49% !important;
+		margin:0 2% 2% 0 !important;
+		}
+	.woocommerce ul.products li.product:nth-child(2n), 
+	.woocommerce-page ul.products li.product:nth-child(2n) {
+		float:right;
+		clear:none !important;
+		margin-right:0  !important;
+		}
+		
+			/* CART */
+	.woocommerce .cart-collaterals .shipping_calculator, 
+	.woocommerce-page .cart-collaterals .shipping_calculator {
+		margin-top:20px;
+		}
+	.woocommerce table.cart td.actions .coupon .input-text, 
+	.woocommerce-page table.cart td.actions .coupon .input-text {
+		width:48%;
+		}	
+}
+
+@media (max-width: 767px) {
+	.woocommerce .woocommerce-result-count, 
+	.woocommerce-page .woocommerce-result-count {
+		float:none;
+		}
+	.woocommerce .woocommerce-ordering,
+	.woocommerce-page .woocommerce-ordering {
+		float:none;
+		}
+}
+@media (max-width: 479px) {
+	.woocommerce ul.products li.product,
+	.woocommerce-page ul.products li.product {
+		width:100% !important;
+		margin:0 0 3% !important;
+		}
+	.woocommerce #review_form #respond p.stars, 
+	.woocommerce-page #review_form #respond p.stars {
+		margin-left:0;
+		}	
+
+	/* Tabs */
+	.woocommerce div.product .woocommerce-tabs ul.tabs li, 
+	.woocommerce-page div.product .woocommerce-tabs ul.tabs li{
+		display:block;
+		width:100%;
+		border: 1px solid #999;
+		border-bottom: none;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;		
+		}		
+	.woocommerce div.product .woocommerce-tabs ul.tabs li.active, 
+	.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active {
+		background: #000;
+		color: #fff;
+		border-color: #000;
+		}
+	.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+	.woocommerce-page div.product .woocommerce-tabs ul.tabs li a {
+		display:block;
+		}
+		
+	/* Cart */
+	.woocommerce table.shop_table.cart th, 
+	.woocommerce-page table.shop_table.cart th {
+		padding-right:2px;
+		text-align:center;
+		}
+	.woocommerce table.cart td.product-name a:after, 
+	.woocommerce-page table.cart td.product-name a:after {
+		display:none;
+		}
+		
+	.woocommerce table.cart td.actions .input-text,
+	.woocommerce-page table.cart td.actions .input-text,	
+	.woocommerce table.cart td.actions .button, 
+	.woocommerce-page table.cart td.actions .button {
+		width:100% !important;
+		clear:both !important;
+		float:none !important;
+		margin-bottom:10px !important;
+		}
+		
+}
