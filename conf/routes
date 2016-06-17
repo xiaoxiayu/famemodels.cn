@@ -9,6 +9,7 @@ GET     /                                       App.Index
 GET		/portfolio-content						App.LoadPortfolioContent
 GET		/model-portfolio						App.ModelPortfolio
 
+GET		/model-info								App.CreateModelInfoHtml
 GET		/model-gallery							App.ModelGallery
 
 # Ignore favicon requests

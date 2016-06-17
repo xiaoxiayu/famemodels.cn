@@ -1,18 +1,4 @@
-package app
 
-import (
-	"database/sql"
-	"fmt"
-	"io/ioutil"
-	"path"
-
-	_ "github.com/mattn/go-sqlite3"
-	"github.com/revel/revel"
-)
-
-var G_DB *sql.DB
-
-var G_model_detail_html = `
 	<!DOCTYPE html>
 	<html>
 	<head lang="en">
@@ -83,25 +69,25 @@ var G_model_detail_html = `
 	
 	                <div class="layout-half" id="portfolio-content">
 	                    <div class="thumb">
-	                        <img src="/public/img/%s/detail.jpg"
+	                        <img src="/public/img/DENISA/detail.jpg"
 	                             alt="">
 	                    </div>
 	                    <!-- .thumb -->
 	                    <div class="details">
-	                        <h3>%s</h3>
+	                        <h3>DENISA</h3>
 	
 	                        <div class="desc">
-	                            <p>%s</p>
+	                            <p>DENISA</p>
 	
 	                        </div>
 	                        <!-- .desc -->
 	                        <div class="info">
 	                            <ul>
 	                                <li><i class="icon-user"></i><label >Model Name:</label> <span
-	                                        class="prop">%s</span>
+	                                        class="prop">DENISA</span>
 	                                </li>
 	                                <li><i class="icon-map-marker"></i><label >Location:</label> <span
-	                                        class="prop">%s</span></li>
+	                                        class="prop">SHANGHAI</span></li>
 	
 	                            </ul>
 	                        </div>
@@ -122,63 +108,4 @@ var G_model_detail_html = `
 	</div>
 	</body>
 	</html>
-	`
-
-func init() {
-	// Filters is the default set of global filters.
-	revel.Filters = []revel.Filter{
-		revel.PanicFilter,             // Recover from panics and display an error page instead.
-		revel.RouterFilter,            // Use the routing table to select the right Action
-		revel.FilterConfiguringFilter, // A hook for adding or removing per-Action filters.
-		revel.ParamsFilter,            // Parse parameters into Controller.Params.
-		revel.SessionFilter,           // Restore and write the session cookie.
-		revel.FlashFilter,             // Restore and write the flash cookie.
-		revel.ValidationFilter,        // Restore kept validation errors and save new ones from cookie.
-		revel.I18nFilter,              // Resolve the requested language
-		HeaderFilter,                  // Add some security based headers
-		revel.InterceptorFilter,       // Run interceptors around the action.
-		revel.CompressFilter,          // Compress the result.
-		revel.ActionInvoker,           // Invoke the action.
-	}
-
-	// register startup functions with OnAppStart
-	// ( order dependent )
-	// revel.OnAppStart(InitDB)
-	// revel.OnAppStart(FillCache)
-	var err error
-	G_DB, err = sql.Open("sqlite3", "./fame.db")
-	if err != nil {
-		panic(err.Error())
-	}
-
-	func() {
-		model_cnt := GetModelCount()
-		for m_i := 1; m_i <= model_cnt; m_i++ {
-			model_data := GetModelInfoBySequence(m_i)
-			//fmt.Println(model_data.Name)
-			var d1 = []byte(fmt.Sprintf(G_model_detail_html,
-				model_data.Name,
-				model_data.Name,
-				model_data.Name,
-				model_data.Name,
-				model_data.Location))
-			fmt.Println(revel.AppRoot)
-			err2 := ioutil.WriteFile(path.Join(revel.BasePath, "public", "modeldetail", fmt.Sprintf("model_%s_detail.html", model_data.Name)), d1, 0666)
-			if err2 != nil {
-				fmt.Println(err2.Error())
-			}
-		}
-	}()
-}
-
-// TODO turn this into revel.HeaderFilter
-// should probably also have a filter for CSRF
-// not sure if it can go in the same filter or not
-var HeaderFilter = func(c *revel.Controller, fc []revel.Filter) {
-	// Add some common security headers
-	c.Response.Out.Header().Add("X-Frame-Options", "SAMEORIGIN")
-	c.Response.Out.Header().Add("X-XSS-Protection", "1; mode=block")
-	c.Response.Out.Header().Add("X-Content-Type-Options", "nosniff")
-
-	fc[0](c, fc[1:]) // Execute the next filter stage.
-}
+	

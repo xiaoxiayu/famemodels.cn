@@ -16,7 +16,7 @@
 <link rel='stylesheet' href="/public/css/bootstrap.min.css" type='text/css'/>
 
 <link href="/public/css/ihover.css" rel="stylesheet">
-
+<link rel="stylesheet" href="/public/css/blueimp-gallery.css">
 
 <style type="text/css">
 
@@ -716,7 +716,7 @@ Image credits: unsplash.com
                     <h1>FAME</h1>
                     <h3>DESTINY HAS TWO WAYS OF CRUSHING US,BY REFUSING OUR WISHES,AND BY FULFILLING THEM.</h3>
                 </hgroup>
-                <button class="btn btn-hero btn-lg" role="button" onclick="location='#about-us-2'">ABOUT US</button>
+                <button class="btn btn-hero btn-lg" role="button" onclick="location.href='#about-us-2'">ABOUT US</button>
             </div>
         </div>
         <div class="item slides">
@@ -724,9 +724,9 @@ Image credits: unsplash.com
             <div class="hero">
                 <hgroup>
                     <h1 >FAME</h1>
-                    <h3>Get start your next awesome project</h3>
+                    <h3>DESTINY HAS TWO WAYS OF CRUSHING US,BY REFUSING OUR WISHES,AND BY FULFILLING THEM.</h3>
                 </hgroup>
-                <button class="btn btn-hero btn-lg" role="button" onclick="location='#contact-us'">CONTACT US</button>
+                <button class="btn btn-hero btn-lg" role="button" onclick="location.href='#portfolio-2'">MODELS</button>
             </div>
         </div>
         <div class="item slides">
@@ -734,9 +734,9 @@ Image credits: unsplash.com
             <div class="hero">
                 <hgroup>
                     <h1 >FAME</h1>
-                    <h3>Get start your next awesome project</h3>
+                    <h3>DESTINY HAS TWO WAYS OF CRUSHING US,BY REFUSING OUR WISHES,AND BY FULFILLING THEM.</h3>
                 </hgroup>
-                <button class="btn btn-hero btn-lg" role="button" onclick="location='#portfolio-2'">MODLES</button>
+                <button class="btn btn-hero btn-lg" role="button" onclick="location.href='#contact-us'">CONTACT US</button>
             </div>
         </div>
         <a class="left carousel-control" href="#bs-carousel" data-slide="prev" >
@@ -755,7 +755,7 @@ Image credits: unsplash.com
         <div class="row-fluid">
             <div class="span3">
                 <div id="wi-logo" class="wi-logo">
-                    <a href="#" rel="home">
+                    <a href="/public/wordpress" rel="home">
                         <img src="/public/img/fame/logo300x57.jpg" alt="FAME"/>
 
                     </a>
@@ -923,7 +923,7 @@ Image credits: unsplash.com
         <div class="container">
             <div role="form" class="wpcf7" id="wpcf7-f1317-p1316-o1" lang="zh-TW" dir="ltr">
                 <div class="screen-reader-response"></div>
-                <form name="" action="/#wpcf7-f1317-p1316-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                <form name="" action="javascript:void(0);" method="post" class="wpcf7-form" novalidate="novalidate">
                     <div style="display: none;">
                         <input type="hidden" name="_wpcf7" value="1317"/>
                         <input type="hidden" name="_wpcf7_version" value="4.2.1"/>
@@ -1015,22 +1015,22 @@ Image credits: unsplash.com
 <div class="wi-portfolio-filter">
     <ul>
         <li class="all active">
-            <a data-filter="*" href="#">
+            <a data-filter="*" href="javascript:void(0);">
                 <span class="catname">All</span>
             </a>
         </li>
         <li>
-            <a data-filter=".wi-foreign-models" href="#">
+            <a data-filter=".wi-foreign-models" href="javascript:void(0);">
                 <span class="catname">Foreign Models</span>
             </a>
         </li>
         <li>
-            <a data-filter=".wi-graphic" href="#">
+            <a data-filter=".wi-graphic" href="javascript:void(0);">
                 <span class="catname">Graphic</span>
             </a>
         </li>
         <li>
-            <a data-filter=".wi-photography" href="#">
+            <a data-filter=".wi-photography" href="javascript:void(0);">
                 <span class="catname">Photography</span>
             </a>
         </li>
@@ -1048,8 +1048,10 @@ Image credits: unsplash.com
 
 <div class="clearfix">
 	<div class="container">
+	<div id="links">
 	        <div class="row" id="model-portfolio">
 			</div>
+	</div>
 	</div>
 </div>
 
@@ -1077,7 +1079,15 @@ Image credits: unsplash.com
 
 </div><!-- #wi-content -->
 
-
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
 
 <div class="scrollup" id="scrollup"></div>
 <link rel='stylesheet' id='wi-flexslider-css'
@@ -1085,12 +1095,21 @@ Image credits: unsplash.com
 
 <script type='text/javascript' src='/public/wordpress/wp-includes/js/comment-reply.min.js?ver=4.2.8'></script>
 
-
-
 <script type='text/javascript' src='/public/js/jquery-1.9.1.min.js'></script>
 <script src="/public/js/bootstrap.js"></script>
+<script src="/public/js/blueimp-gallery.js"></script>
+<script src="/public/js/jquery.blueimp-gallery.js"></script>
+
+
 <script>
     $(function () {
+		$("body").on("click", "#model-info", function(e) {
+			var model_name = $(this).find("h3").text();
+			{{.js_blueimp_gallery_page}};
+	
+		});
+		
+		
 		$("body").on("click", ".portfolio-item", function(e) {
 			var model_name = $(this).find("h3").text();
 			$.get("portfolio-content?name="+model_name, function(result){
@@ -1158,21 +1177,8 @@ Image credits: unsplash.com
     } );
 </script>
 
-<script>
- document.getElementById('links').onclick = function (event) {
-        blueimp.Gallery([
-            {
-                title: 'Noodle soup',
-                href: 'model_detail.html',
-                type: 'text/html'
-            },
-            {
-                title: 'Tomato salad',
-                href: 'https://example.org/text/tomato-salad.html',
-                type: 'text/html'
-            }
-        ]);
-</script>
+
+
 
 </body>
 

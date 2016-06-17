@@ -2,11 +2,14 @@ package controllers
 
 import (
 	"fmt"
+	"html/template"
+	"path"
 
-	"fame/app"
+	"io/ioutil"
 	"math"
 
 	"github.com/revel/revel"
+	"github.com/xiaoxiayu/famemodels.cn/app"
 
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -15,170 +18,122 @@ type App struct {
 	*revel.Controller
 }
 
-func getModelCount() int {
-	rows, err := app.G_DB.Query("SELECT COUNT(name) FROM model")
-	if err != nil {
-		return -1
-	}
-
-	var cnt int
-	for rows.Next() {
-		err = rows.Scan(&cnt)
-		if err != nil {
-			return -1
-		}
-	}
-	return cnt
-}
-
-type ModleUrl struct {
-	Thumb string
-}
-
-type ModleData struct {
-	Name     string
-	Squence  int
-	Sex      int
-	Age      int
-	Location string
-	Info     string
-
-	URL ModleUrl
-}
-
-func getModels(sequence, limit int) []ModleData {
-	rows, err := app.G_DB.Query(fmt.Sprintf("SELECT name,sequence,location,info FROM model ORDER BY sequence limit %d,%d", sequence, limit))
-	model_datas := []ModleData{}
-	for rows.Next() {
-		model_data := ModleData{}
-
-		err = rows.Scan(
-			&model_data.Name,
-			&model_data.Squence,
-			&model_data.Location,
-			&model_data.Info)
-		if err != nil {
-			fmt.Println(err.Error())
-		}
-		model_datas = append(model_datas, model_data)
-	}
-	return model_datas
-}
-
-func getModelsName(sequence, limit int) []ModleData {
-	rows, err := app.G_DB.Query(fmt.Sprintf("SELECT name FROM model ORDER BY sequence limit %d,%d", sequence, limit))
-	model_datas := []ModleData{}
-	for rows.Next() {
-		model_data := ModleData{}
-
-		err = rows.Scan(&model_data.Name)
-		if err != nil {
-			fmt.Println(err.Error())
-		}
-		model_datas = append(model_datas, model_data)
-	}
-	return model_datas
-}
-
-func getModelsInfo(name string) ModleData {
-	rows, err := app.G_DB.Query(fmt.Sprintf(`SELECT location,info FROM model WHERE name='%s'`, name))
-	model_data := ModleData{}
-	for rows.Next() {
-		model_data := ModleData{}
-
-		err = rows.Scan(&model_data.Location, &model_data.Info)
-		if err != nil {
-			fmt.Println(err.Error())
-		}
-		return model_data
-	}
-	return model_data
-}
-
 func (c App) Index() revel.Result {
-	//createModelInfoHtml()
-	return c.Render()
+	model_cnt := app.GetModelCount()
+	blueimp_gallery_page := `blueimp.Gallery([`
+	for m_i := 1; m_i <= model_cnt; m_i++ {
+		model_name := app.GetModelNameBySequence(m_i)
+		blueimp_gallery_page += fmt.Sprintf(`
+						{
+			                title: 'MODEL',
+			                href: '/public/modeldetail/model_%s_detail.html',
+			                type: 'text/html'
+			            },`, model_name)
+	}
+	blueimp_gallery_page = blueimp_gallery_page[:len(blueimp_gallery_page)-1]
+	blueimp_gallery_page += `])`
+
+	js_blueimp_gallery_page := template.JS(blueimp_gallery_page)
+	return c.Render(js_blueimp_gallery_page)
 }
 
 func (c App) ModelGallery() revel.Result {
-
 	return c.Render()
+}
+
+func (c App) CreateModelInfoHtml(name string) revel.Result {
+	model_data := app.GetModelsInfo(name)
+	fmt.Println(name)
+	fmt.Println(model_data)
+	var d1 = []byte(fmt.Sprintf(app.G_model_detail_html,
+		name,
+		name,
+		name,
+		name,
+		model_data.Location))
+	err2 := ioutil.WriteFile(path.Join(revel.BasePath, "public", "modeldetail", fmt.Sprintf("model_%s_detail.html", name)), d1, 0666)
+	if err2 != nil {
+		fmt.Println(err2.Error())
+		return c.RenderJson(0)
+	}
+	return c.RenderJson(1)
 }
 
 func (c App) LoadPortfolioContent(name string) revel.Result {
 	//fmt.Println("Model Name:", name)
-	model_data := getModelsInfo(name)
+	model_data := app.GetModelsInfo(name)
 	//fmt.Println(model_data)
+
 	res_str := fmt.Sprintf(`
-				<div class="panel panel-default" style="border:none;" id="model-detail-container">
-				<div class="panel-body">
-                <div class="row">
-                    <HR style=" FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#000000,direction:1145,strength:2); "
-                         color=#987cb9 SIZE=1>
-                    <div class="col-md-4" style="float:left;text-align: left">
-                        <h3><a href="javascript:void(0);" style="text-decoration: none;"><i class="icon-chevron-left"></i>Previous</a></h3>
-                    </div>
-                    <div class="col-md-4" style="float:left;text-align: center;margin-left: -7px" id="info-close">
-                        <a href="javascript:void(0);" style="text-decoration: none;"><h3 class="glyphicon glyphicon-remove"></h3></a>
-                        <!--<h3><a><span class="glyphicon glyphicon-remove"></span>&times;</a></h3>-->
+					<div class="panel panel-default" style="border:none;" id="model-detail-container">
+					<div class="panel-body">
+	                <div class="row">
+	                    <HR style=" FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#000000,direction:1145,strength:2); "
+	                         color=#987cb9 SIZE=1>
+	                    <div class="col-md-4" style="float:left;text-align: left">
+	                        <h3><a href="javascript:void(0);" style="text-decoration: none;"><i class="icon-chevron-left"></i>Previous</a></h3>
+	                    </div>
+	                    <div class="col-md-4" style="float:left;text-align: center;margin-left: -7px" id="info-close">
+	                        <a href="javascript:void(0);" style="text-decoration: none;"><h3 class="glyphicon glyphicon-remove"></h3></a>
+	                        <!--<h3><a><span class="glyphicon glyphicon-remove"></span>&times;</a></h3>-->
 
-                    </div>
-                    <div class="col-md-4" style="float:left;text-align: right;margin-left: -7px">
-                        <h3><a href="javascript:void(0);" style="text-decoration: none;">Next<i class="icon-chevron-right"></i></a></h3>
+	                    </div>
+	                    <div class="col-md-4" style="float:left;text-align: right;margin-left: -7px">
+	                        <h3><a href="javascript:void(0);" style="text-decoration: none;">Next<i class="icon-chevron-right"></i></a></h3>
 
-                    </div>
-                    <HR style=" FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#000000,direction:1145,strength:2); "
-                         color=#987cb9 SIZE=1>
+	                    </div>
+	                    <HR style=" FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#000000,direction:1145,strength:2); "
+	                         color=#987cb9 SIZE=1>
 
-                    <div class="col-md-12" id="portfolio-ajax-content-container">
+	                    <div class="col-md-12" id="portfolio-ajax-content-container">
 
-                        <div class="layout-half" id="portfolio-content">
-							<div class="thumb">
-                                <img src="/public/img/%s/detail.jpg"
-                                     class="attachment-thumb-600-crop wp-post-image"
-                                     alt="2013_03_08_12_03_13_dla_niego_ochnik_wiosna_lato_2013 - Kopia - Kopia - Kopia - Kopia">
-                            </div>
-                            <!-- .thumb -->
-                            <div class="details">
-                                <h3>%s</h3>
+	                        <div class="layout-half" id="portfolio-content">
+								<div class="thumb">
+	                                <img src="/public/img/%s/detail.jpg"
+	                                     class="attachment-thumb-600-crop wp-post-image"
+	                                     alt="2013_03_08_12_03_13_dla_niego_ochnik_wiosna_lato_2013 - Kopia - Kopia - Kopia - Kopia">
+	                            </div>
+	                            <!-- .thumb -->
+	                            <div class="details">
+	                                <h3>%s</h3>
 
-                                <div class="desc">
-                                    <p>%s</p>
+	                                <div class="desc">
+	                                    <p>%s</p>
 
-                                </div>
-                                <!-- .desc -->
-                                <div class="info">
-                                    <ul>
-                                        <li><i class="icon-user"></i><label >Model Name:</label> <span
-                                                class="prop">%s</span>
-                                        </li>
-                                        <li><i class="icon-map-marker"></i><label >Location:</label> <span
-                                                class="prop">%s</span></li>
+	                                </div>
+	                                <!-- .desc -->
+	                                <div class="info">
+	                                    <ul>
+	                                        <li><i class="icon-user"></i><label >Model Name:</label> <span
+	                                                class="prop">%s</span>
+	                                        </li>
+	                                        <li><i class="icon-map-marker"></i><label >Location:</label> <span
+	                                                class="prop">%s</span></li>
 
-                                    </ul>
-                                </div>
-                                <!-- .info -->
-                                <div class="launch">
-                                    <a class="btn-launch" href="#"
-                                       target="_self">Gallery</a>
-                                </div>
-                                <!-- .wi-button -->
-                            </div>
-                            <!-- .details -->
-							 </div>
-                        <!-- #portfolio-content -->
-                    </div>
+	                                    </ul>
+	                                </div>
+	                                <!-- .info -->
+	                                <div class="launch">
+	                                    <a class="btn-launch" href="#"
+	                                       target="_self">Gallery</a>
+	                                </div>
+	                                <!-- .wi-button -->
+	                            </div>
+	                            <!-- .details -->
+								 </div>
+	                        <!-- #portfolio-content -->
+	                    </div>
 
-                </div>
-            </div>
-        </div>
-		`, name, name, model_data.Info, name, model_data.Location)
+	                </div>
+	            </div>
+	        </div>
+			`, name, name, model_data.Info, name, model_data.Location)
 	return c.RenderJson(res_str)
 }
 
 func (c App) ModelPortfolio(page, state int) revel.Result {
 	//fmt.Println("PAGE:", page)
-	model_cnt := getModelCount()
+	model_cnt := app.GetModelCount()
 	page_cnt := float64(float64(model_cnt) / 6.0)
 	page_cnt = math.Ceil(page_cnt)
 	if page_cnt == 0 {
@@ -216,22 +171,23 @@ func (c App) ModelPortfolio(page, state int) revel.Result {
 
 	sequence := (page - 1) * 6
 
-	model_datas := getModelsName(sequence, 6)
+	model_datas := app.GetModelsName(sequence, 6)
 	model_portfolio_str := ""
 	for _, model_data := range model_datas {
-
-		model_html := fmt.Sprintf(`<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mimg" >
-                <div class="ih-item square effect8 ">
-                    <a class="portfolio-item" href="javascript:void(0);">
-                    <div class="img"><img src="/public/img/%s/index.jpg" alt="img"></div>
-                    <div class="info">
-                        <h3>%s</h3>
-
-                        <p>FOREIGN MODELS</p>
+		model_html := fmt.Sprintf(`
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mimg">
+                    <div class="ih-item square effect8 ">
+                        <a name="gallery-a" href="javascript:void(0);" title="%s">
+                            <div class="img">
+								<img class="img" src="/public/img/%s/index.jpg" alt="%s">
+							</div>
+                            <div class="info" id="model-info">
+                                <h3>%s</h3>
+                                <p>FOREIGN MODELS</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                </div>
-            </div>`, model_data.Name, model_data.Name)
+                </div>`, model_data.Name, model_data.Name, model_data.Name, model_data.Name)
 		model_portfolio_str += model_html
 	}
 
