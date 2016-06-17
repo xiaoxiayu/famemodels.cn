@@ -2,9 +2,12 @@ package app
 
 import (
 	"database/sql"
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"os"
 	"path"
+	"runtime"
 
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/revel/revel"
@@ -124,6 +127,11 @@ var G_model_detail_html = `
 	</html>
 	`
 
+type FameCfg struct {
+	PublicPathUnix string `json:"PublicPathUnix"`
+	PublicPathWin  string `json:"PublicPathWin"`
+}
+
 func init() {
 	// Filters is the default set of global filters.
 	revel.Filters = []revel.Filter{
@@ -152,6 +160,20 @@ func init() {
 	}
 
 	func() {
+		fi, err := os.Open("fame.cfg")
+		if err != nil {
+			panic(err)
+		}
+		defer fi.Close()
+		fd, err := ioutil.ReadAll(fi)
+		// fmt.Println(string(fd))
+
+		var cfg FameCfg
+		err = json.Unmarshal(fd, &cfg)
+		if err != nil {
+			panic(err.Error())
+		}
+
 		model_cnt := GetModelCount()
 		for m_i := 1; m_i <= model_cnt; m_i++ {
 			model_data := GetModelInfoBySequence(m_i)
@@ -162,8 +184,12 @@ func init() {
 				model_data.Name,
 				model_data.Name,
 				model_data.Location))
-			fmt.Println(revel.AppRoot)
-			err2 := ioutil.WriteFile(path.Join(revel.BasePath, "public", "modeldetail", fmt.Sprintf("model_%s_detail.html", model_data.Name)), d1, 0666)
+			public_path := cfg.PublicPathUnix
+			if runtime.GOOS == "windows" {
+				public_path = cfg.PublicPathWin
+
+			}
+			err2 := ioutil.WriteFile(path.Join(public_path, "modeldetail", fmt.Sprintf("model_%s_detail.html", model_data.Name)), d1, 0666)
 			if err2 != nil {
 				fmt.Println(err2.Error())
 			}
