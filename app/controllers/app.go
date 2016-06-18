@@ -3,10 +3,11 @@ package controllers
 import (
 	"fmt"
 	"html/template"
-	"path"
-
 	"io/ioutil"
 	"math"
+	"os"
+	"path"
+	"path/filepath"
 
 	"github.com/revel/revel"
 	"github.com/xiaoxiayu/famemodels.cn/app"
@@ -37,8 +38,57 @@ func (c App) Index() revel.Result {
 	return c.Render(js_blueimp_gallery_page)
 }
 
-func (c App) ModelGallery() revel.Result {
-	return c.Render()
+func getFilelist(path string) []string {
+	var getfiles []string
+	err := filepath.Walk(path, func(path string, f os.FileInfo, err error) error {
+		if f == nil {
+			return err
+		}
+		if f.IsDir() {
+			return nil
+		}
+		println(path)
+		getfiles = append(getfiles, path)
+		return nil
+	})
+	if err != nil {
+		fmt.Printf("filepath.Walk() returned %v\n", err)
+	}
+	return getfiles
+}
+
+func (c App) ModelGallery(name string) revel.Result {
+	fmt.Println("ModelGallery:", name)
+	model_imgs := getFilelist(path.Join(revel.AppRoot, "public", "img", name))
+	img_str := ""
+	for _, model_img := range model_imgs {
+		img_str += fmt.Sprintf(`
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+		        <div class="hovereffect">
+		            <a name="gallery-a" href="/%s" title="%s" data-gallery>
+		                <img class="img-responsive" src="/%s" alt="%s" >
+		            </a>
+		            <div class="overlay">
+		                <h2>%s</h2>
+		                <p class="icon-links">
+		                    <a href="http://twitter.com/share?url=http://www.famemodels.cn/%s">
+		                        <span class="fa fa-twitter"></span>
+		                    </a>
+		                    <a href="http://www.facebook.com/sharer/sharer.php?u=http://www.famemodels.cn/%s">
+		                        <span class="fa fa-facebook"></span>
+		                    </a>
+		                    <a href="https://plus.google.com/share?url=http://www.famemodels.cn/%s">
+		                        <span class="fa fa-google-plus"></span>
+		                    </a>
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+			`, model_img, name, model_img, name, name, model_img, model_img, model_img)
+	}
+	img_html := template.HTML(img_str)
+
+	return c.Render(name, img_html)
 }
 
 func (c App) CreateModelInfoHtml(name string) revel.Result {

@@ -110,8 +110,8 @@ var G_model_detail_html = `
 	                        </div>
 	                        <!-- .info -->
 	                        <div class="">
-	                            <button class="btn-launch" href="javascript:void(0);"
-	                               target="_self" style="">Gallery</button>
+	                            <button class="btn-launch" 
+	                               target="_self" style="" id="model-gallery-%s" name="%s">Gallery</button>
 	                        </div>
 	                        <!-- .wi-button -->
 	                    </div>
@@ -123,6 +123,15 @@ var G_model_detail_html = `
 	        </div>
 	    </div>
 	</div>
+	
+	<script>
+		$(function () {
+			$("body").on("click", "[id^=model-gallery]", function(e) {
+				var model_name = $(this).attr( "name");
+				window.open("model-gallery?name="+model_name);
+			});
+		});
+	</script>
 	</body>
 	</html>
 	`
@@ -183,7 +192,9 @@ func init() {
 				model_data.Name,
 				model_data.Name,
 				model_data.Name,
-				model_data.Location))
+				model_data.Location,
+				model_data.Name,
+				model_data.Name))
 			public_path := cfg.PublicPathUnix
 			if runtime.GOOS == "windows" {
 				public_path = cfg.PublicPathWin

@@ -1107,8 +1107,7 @@ Image credits: unsplash.com
 			var model_id = $(this).attr( "alt");
 			var gallery = {{.js_blueimp_gallery_page}};
 			gallery.slide(parseInt(model_id)-1, 0);	
-		});
-		
+		});		
 		
 		$("body").on("click", ".portfolio-item", function(e) {
 			var model_name = $(this).find("h3").text();
