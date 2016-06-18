@@ -75,6 +75,21 @@ func GetModelsName(sequence, limit int) []ModleData {
 	return model_datas
 }
 
+func GetSequenceFromName(name string) int {
+	rows, err := G_DB.Query(fmt.Sprintf("SELECT sequence FROM model WHERE name='%s'", name))
+	if err != nil {
+		fmt.Println(err.Error())
+	}
+	var sequence int
+	for rows.Next() {
+		err = rows.Scan(&sequence)
+		if err != nil {
+			fmt.Println(err.Error())
+		}
+	}
+	return sequence
+}
+
 func GetModelsInfo(name string) ModleData {
 	rows, err := G_DB.Query(fmt.Sprintf(`SELECT location,info FROM model WHERE name='%s'`, name))
 	model_data := ModleData{}

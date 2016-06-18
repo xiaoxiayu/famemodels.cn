@@ -179,15 +179,15 @@ func (c App) ModelPortfolio(page, state int) revel.Result {
                     <div class="ih-item square effect8 ">
                         <a name="gallery-a" href="javascript:void(0);" title="%s">
                             <div class="img">
-								<img class="img" src="/public/img/%s/index.jpg" alt="%s">
+								<img class="img" src="/public/img/%s/index.jpg">
 							</div>
-                            <div class="info" id="model-info">
+                            <div class="info" id="model-info" alt="%d">
                                 <h3>%s</h3>
                                 <p>FOREIGN MODELS</p>
                             </div>
                         </a>
                     </div>
-                </div>`, model_data.Name, model_data.Name, model_data.Name, model_data.Name)
+                </div>`, model_data.Name, model_data.Name, app.GetSequenceFromName(model_data.Name), model_data.Name)
 		model_portfolio_str += model_html
 	}
 

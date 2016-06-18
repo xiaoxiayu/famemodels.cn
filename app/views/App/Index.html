@@ -1104,9 +1104,9 @@ Image credits: unsplash.com
 <script>
     $(function () {
 		$("body").on("click", "#model-info", function(e) {
-			var model_name = $(this).find("h3").text();
-			{{.js_blueimp_gallery_page}};
-	
+			var model_id = $(this).attr( "alt");
+			var gallery = {{.js_blueimp_gallery_page}};
+			gallery.slide(parseInt(model_id)-1, 0);	
 		});
 		
 		
