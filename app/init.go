@@ -14,6 +14,7 @@ import (
 )
 
 var G_DB *sql.DB
+var G_CFG FameCfg
 
 var G_model_detail_html = `
 	<!DOCTYPE html>
@@ -177,8 +178,7 @@ func init() {
 		fd, err := ioutil.ReadAll(fi)
 		// fmt.Println(string(fd))
 
-		var cfg FameCfg
-		err = json.Unmarshal(fd, &cfg)
+		err = json.Unmarshal(fd, &G_CFG)
 		if err != nil {
 			panic(err.Error())
 		}
@@ -195,10 +195,9 @@ func init() {
 				model_data.Location,
 				model_data.Name,
 				model_data.Name))
-			public_path := cfg.PublicPathUnix
+			public_path := G_CFG.PublicPathUnix
 			if runtime.GOOS == "windows" {
-				public_path = cfg.PublicPathWin
-
+				public_path = G_CFG.PublicPathWin
 			}
 			err2 := ioutil.WriteFile(path.Join(public_path, "modeldetail", fmt.Sprintf("model_%s_detail.html", model_data.Name)), d1, 0666)
 			if err2 != nil {

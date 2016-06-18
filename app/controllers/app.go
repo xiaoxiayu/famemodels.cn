@@ -8,6 +8,7 @@ import (
 	"os"
 	"path"
 	"path/filepath"
+	"runtime"
 
 	"github.com/revel/revel"
 	"github.com/xiaoxiayu/famemodels.cn/app"
@@ -58,8 +59,11 @@ func getFilelist(path string) []string {
 }
 
 func (c App) ModelGallery(name string) revel.Result {
-	fmt.Println("ModelGallery:", name)
-	model_imgs := getFilelist(path.Join(revel.AppRoot, "public", "img", name))
+	public_path := app.G_CFG.PublicPathUnix
+	if runtime.GOOS == "windows" {
+		public_path = app.G_CFG.PublicPathWin
+	}
+	model_imgs := getFilelist(path.Join(public_path, "img", name))
 	img_str := ""
 	for _, model_img := range model_imgs {
 		img_str += fmt.Sprintf(`
